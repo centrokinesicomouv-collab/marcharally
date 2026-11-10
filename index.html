@@ -1,0 +1,1389 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102f38"><title>MarchaRally · Objetivos terapéuticos · Equipos</title>
+<style>
+:root{--dark:#102f38;--bg:#f2f6f5;--a:#087d79;--lime:#d9fa78;--muted:#61757c;--line:#dce6e6;--rose:#b6334a;--sand:#fff4e2;--sh:0 12px 36px #12373f0d;--radius:17px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--dark);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}h1,h2,h3,p{margin:0 0 13px}h1{font-size:clamp(2rem,4vw,3.6rem);line-height:1.1;letter-spacing:-.05em}h2{font-size:1.35rem;letter-spacing:-.025em}h3{font-size:1.03rem}a{color:var(--a)}header{background:var(--dark);color:white;padding:15px max(20px,calc((100vw - 1160px)/2));display:flex;justify-content:space-between;gap:18px;align-items:center;min-height:76px}.logo{font-weight:850;font-size:21px;letter-spacing:-.05em}.logo i{font-style:normal;color:var(--lime)}header small{display:block;color:#bdd4d4;letter-spacing:.09em;font-size:9px;font-weight:750}nav{display:flex;gap:5px;flex-wrap:wrap}nav button{background:transparent;color:#e2f0ed;border:1px solid #5d777b;font-size:12px;padding:9px 12px}nav button.selected{background:#fff;color:var(--dark)}.wrap{max-width:1160px;margin:auto;padding:35px 20px 80px}.view{display:none}.view.active{display:block}.hero{display:grid;grid-template-columns:1.13fr .87fr;gap:28px;align-items:start;margin-top:28px}.eyebrow{font-size:11px;letter-spacing:.13em;color:var(--a);font-weight:850;text-transform:uppercase;margin-bottom:15px}.lede{font-size:17px;line-height:1.7;color:var(--muted);max-width:640px}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:27px 0}.kpis div{padding:14px;border-top:3px solid #b6d8d0}.kpis strong{display:block;font-size:29px;letter-spacing:-.055em}.kpis small,.hint{font-size:12px;color:var(--muted)}.panel{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:27px;box-shadow:var(--sh);margin-bottom:18px}.panel h2{margin-bottom:7px}.panel p{color:var(--muted)}label{display:block;font-weight:750;font-size:13px;margin:15px 0 6px}input,select,textarea{width:100%;font:inherit;color:var(--dark);background:#fff;border:1px solid #c5d6d8;border-radius:9px;padding:11px 12px;outline:0}input:focus,select:focus,textarea:focus{border-color:var(--a);box-shadow:0 0 0 3px #def4ef}textarea{min-height:140px;resize:vertical;line-height:1.6}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}.btn{border:1px solid var(--a);background:var(--a);color:white;border-radius:9px;padding:12px 17px;font:inherit;font-weight:800;cursor:pointer}.btn.secondary{background:white;color:var(--dark);border-color:#bad0d1}.btn.warning{background:#fff0ec;color:#9f2c3d;border-color:#f3bdc5}.btn:disabled{opacity:.48;cursor:not-allowed}.btn.big{width:100%;margin-top:20px}.notice{border:1px solid #d5e2db;background:#eaf5ef;border-radius:10px;padding:14px 17px;font-size:13px;color:#315c57}.notice.warn{background:#fff6e9;border-color:#f0d8ae;color:#7b5523}.alert{color:#a5273f;background:#fff0f0;border:1px solid #ffc9d0;padding:12px;border-radius:8px;margin-top:10px}.meta{color:var(--muted);font-size:13px}.none{display:none!important}.muted{color:var(--muted)}.pill{font-size:11px;font-weight:800;padding:5px 10px;border-radius:30px;background:#e6f3ee;color:#126a55}.pill.warn{background:#fff1d8;color:#815a16}.timer{font-size:33px;letter-spacing:-.04em;font-weight:850;white-space:nowrap;font-variant-numeric:tabular-nums}.topline{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}.progress{height:9px;border-radius:10px;background:#e0ece9;overflow:hidden;margin:18px 0}.progress>div{height:100%;background:var(--a);width:0;transition:width .3s}.casegrid{display:grid;grid-template-columns:minmax(0,.87fr) minmax(0,1.13fr);gap:25px}.vignette{background:#f0f7f5;border-left:4px solid var(--a);padding:19px;line-height:1.76;border-radius:7px}.questionbar{background:var(--dark);color:white;margin:-27px -27px 26px;padding:22px 27px;border-radius:17px 17px 0 0}.questionbar span{font-size:11px;font-weight:850;color:var(--lime);letter-spacing:.11em}.questionbar h2{font-size:19px;margin:8px 0 0}.option{border:1px solid #cbdada;border-radius:10px;padding:15px;display:flex;align-items:flex-start;gap:12px;cursor:pointer;margin:10px 0;min-height:92px;background:white}.option input{width:auto;margin-top:5px}.option:has(input:checked){border:2px solid var(--a);background:#ecf8f4;padding:14px}.foot{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:19px;margin-top:20px}.foot .btn{min-width:185px}.rubric{margin-top:14px;border:1px solid var(--line);border-radius:10px;overflow:hidden}.rubric .item{display:flex;justify-content:space-between;gap:14px;padding:10px 13px;font-size:12px;border-bottom:1px solid var(--line)}.rubric .item:last-child{border:0}.rubric b{white-space:nowrap}.feedback{background:#f4f8f8;border-radius:9px;padding:16px;margin:14px 0}.feedback p{margin:4px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}.stats>div{padding:15px;border:1px solid var(--line);background:white;border-radius:11px}.stats strong{display:block;font-size:25px}.stats small{color:var(--muted);font-size:11px}table{width:100%;border-collapse:collapse;min-width:730px}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);font-size:12px;vertical-align:top}th{background:#edf4f3;color:#51717a;font-size:11px}.scroll{overflow:auto}.rank{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid var(--line);padding:12px 0}.rank:last-child{border:0}.rank strong{font-size:22px}.tagline{font-size:12px;color:#5d777a}.scorelines{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.scorelines div{background:#eef6f3;border-radius:10px;padding:16px}.scorelines strong{font-size:23px;display:block}.qrcode{margin:18px auto 13px;background:white;padding:13px;width:min(100%,310px);display:grid;place-items:center;border-radius:12px;border:1px solid var(--line)}.qrcode svg{width:100%;height:auto;image-rendering:pixelated}.center{text-align:center}.linkline{overflow-wrap:anywhere;font-size:13px}.badgebox{border:1px solid var(--line);background:#fbfdfd;padding:14px;border-radius:10px;margin:11px 0}.longtext{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f6f6;padding:14px;border-radius:9px;color:var(--dark);font-size:13px}.criterium{display:grid;grid-template-columns:1fr 75px;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.criterium select{padding:7px}.event{display:flex;gap:8px;font-size:12px;border-bottom:1px solid var(--line);padding:9px 0}.event b{min-width:58px}.wcount{display:block;text-align:right;font-size:11px;color:var(--muted);margin:3px 0 8px}.linkbtn{background:none;border:0;color:var(--a);cursor:pointer;font:inherit;font-weight:800;text-decoration:underline;padding:0}footer{text-align:center;padding:20px;color:#73888a;font-size:12px;border-top:1px solid var(--line)}
+@media(max-width:850px){.hero,.casegrid,.split{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.wrap{padding:23px 13px 65px}.panel{padding:19px}.questionbar{margin:-19px -19px 20px;padding:19px}.foot{align-items:stretch;flex-direction:column}.foot .btn{width:100%}header{padding:13px}.scorelines{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.kpis strong{font-size:24px}.logo{font-size:17px}nav button{font-size:11px;padding:8px}.stats strong{font-size:20px}}
+</style></head>
+<body><header><div><div class="logo">MARCHA<i>RALLY</i></div><small>RAZONAMIENTO CLÍNICO · KINESIOLOGÍA</small></div><nav><button id="navStudent" class="selected" onclick="goto('student')">Estudiantes</button><button id="navWall" onclick="goto('wall')">Equipos + QR</button><button id="navTeacher" onclick="goto('teacher')">Docente</button></nav></header>
+<div class="wrap"><div id="msg" class="alert none"></div>
+<section class="view active" id="viewStudent"><div id="studentBody"></div></section>
+<section class="view" id="viewWall"><div id="wallBody"></div></section>
+<section class="view" id="viewTeacher"><div id="teacherBody"></div></section>
+</div><footer>MarchaRally · Evaluación de objetivos terapéuticos · 10 alternativas + 2 desarrollos · 60 minutos globales</footer>
+<script>
+/* open-source QR encoder (MIT; see LICENSE in original code library) */
+const QRModules={};
+(()=>{const module={exports:{}};const require=(id)=>QRModules[id.replace("./","")];
+var QRMath = {
+
+	glog : function(n) {
+	
+		if (n < 1) {
+			throw new Error("glog(" + n + ")");
+		}
+		
+		return QRMath.LOG_TABLE[n];
+	},
+	
+	gexp : function(n) {
+	
+		while (n < 0) {
+			n += 255;
+		}
+	
+		while (n >= 256) {
+			n -= 255;
+		}
+	
+		return QRMath.EXP_TABLE[n];
+	},
+	
+	EXP_TABLE : new Array(256),
+	
+	LOG_TABLE : new Array(256)
+
+};
+	
+for (var i = 0; i < 8; i++) {
+	QRMath.EXP_TABLE[i] = 1 << i;
+}
+for (var i = 8; i < 256; i++) {
+	QRMath.EXP_TABLE[i] = QRMath.EXP_TABLE[i - 4]
+		^ QRMath.EXP_TABLE[i - 5]
+		^ QRMath.EXP_TABLE[i - 6]
+		^ QRMath.EXP_TABLE[i - 8];
+}
+for (var i = 0; i < 255; i++) {
+	QRMath.LOG_TABLE[QRMath.EXP_TABLE[i] ] = i;
+}
+
+module.exports = QRMath;
+
+QRModules["QRMath"]=module.exports;})();
+(()=>{const module={exports:{}};const require=(id)=>QRModules[id.replace("./","")];
+module.exports = {
+    MODE_NUMBER :       1 << 0,
+    MODE_ALPHA_NUM :    1 << 1,
+    MODE_8BIT_BYTE :    1 << 2,
+    MODE_KANJI :        1 << 3
+};
+
+QRModules["QRMode"]=module.exports;})();
+(()=>{const module={exports:{}};const require=(id)=>QRModules[id.replace("./","")];
+module.exports = {
+	PATTERN000 : 0,
+	PATTERN001 : 1,
+	PATTERN010 : 2,
+	PATTERN011 : 3,
+	PATTERN100 : 4,
+	PATTERN101 : 5,
+	PATTERN110 : 6,
+	PATTERN111 : 7
+};
+
+QRModules["QRMaskPattern"]=module.exports;})();
+(()=>{const module={exports:{}};const require=(id)=>QRModules[id.replace("./","")];
+module.exports = {
+	L : 1,
+	M : 0,
+	Q : 3,
+	H : 2
+};
+
+
+QRModules["QRErrorCorrectLevel"]=module.exports;})();
+(()=>{const module={exports:{}};const require=(id)=>QRModules[id.replace("./","")];
+function QRBitBuffer() {
+	this.buffer = [];
+	this.length = 0;
+}
+
+QRBitBuffer.prototype = {
+
+	get : function(index) {
+		var bufIndex = Math.floor(index / 8);
+		return ( (this.buffer[bufIndex] >>> (7 - index % 8) ) & 1) == 1;
+	},
+	
+	put : function(num, length) {
+		for (var i = 0; i < length; i++) {
+			this.putBit( ( (num >>> (length - i - 1) ) & 1) == 1);
+		}
+	},
+	
+	getLengthInBits : function() {
+		return this.length;
+	},
+	
+	putBit : function(bit) {
+	
+		var bufIndex = Math.floor(this.length / 8);
+		if (this.buffer.length <= bufIndex) {
+			this.buffer.push(0);
+		}
+	
+		if (bit) {
+			this.buffer[bufIndex] |= (0x80 >>> (this.length % 8) );
+		}
+	
+		this.length++;
+	}
+};
+
+module.exports = QRBitBuffer;
+
+QRModules["QRBitBuffer"]=module.exports;})();
+(()=>{const module={exports:{}};const require=(id)=>QRModules[id.replace("./","")];
+var QRMath = require('./QRMath');
+
+function QRPolynomial(num, shift) {
+	if (num.length === undefined) {
+		throw new Error(num.length + "/" + shift);
+	}
+
+	var offset = 0;
+
+	while (offset < num.length && num[offset] === 0) {
+		offset++;
+	}
+
+	this.num = new Array(num.length - offset + shift);
+	for (var i = 0; i < num.length - offset; i++) {
+		this.num[i] = num[i + offset];
+	}
+}
+
+QRPolynomial.prototype = {
+
+	get : function(index) {
+		return this.num[index];
+	},
+	
+	getLength : function() {
+		return this.num.length;
+	},
+	
+	multiply : function(e) {
+	
+		var num = new Array(this.getLength() + e.getLength() - 1);
+	
+		for (var i = 0; i < this.getLength(); i++) {
+			for (var j = 0; j < e.getLength(); j++) {
+				num[i + j] ^= QRMath.gexp(QRMath.glog(this.get(i) ) + QRMath.glog(e.get(j) ) );
+			}
+		}
+	
+		return new QRPolynomial(num, 0);
+	},
+	
+	mod : function(e) {
+	
+		if (this.getLength() - e.getLength() < 0) {
+			return this;
+		}
+	
+		var ratio = QRMath.glog(this.get(0) ) - QRMath.glog(e.get(0) );
+	
+		var num = new Array(this.getLength() );
+		
+		for (var i = 0; i < this.getLength(); i++) {
+			num[i] = this.get(i);
+		}
+		
+		for (var x = 0; x < e.getLength(); x++) {
+			num[x] ^= QRMath.gexp(QRMath.glog(e.get(x) ) + ratio);
+		}
+	
+		// recursive call
+		return new QRPolynomial(num, 0).mod(e);
+	}
+};
+
+module.exports = QRPolynomial;
+
+QRModules["QRPolynomial"]=module.exports;})();
+(()=>{const module={exports:{}};const require=(id)=>QRModules[id.replace("./","")];
+var QRMode = require('./QRMode');
+
+function QR8bitByte(data) {
+	this.mode = QRMode.MODE_8BIT_BYTE;
+	this.data = data;
+}
+
+QR8bitByte.prototype = {
+
+	getLength : function() {
+		return this.data.length;
+	},
+	
+	write : function(buffer) {
+		for (var i = 0; i < this.data.length; i++) {
+			// not JIS ...
+			buffer.put(this.data.charCodeAt(i), 8);
+		}
+	}
+};
+
+module.exports = QR8bitByte;
+
+QRModules["QR8bitByte"]=module.exports;})();
+(()=>{const module={exports:{}};const require=(id)=>QRModules[id.replace("./","")];
+var QRErrorCorrectLevel = require('./QRErrorCorrectLevel');
+
+function QRRSBlock(totalCount, dataCount) {
+	this.totalCount = totalCount;
+	this.dataCount  = dataCount;
+}
+
+QRRSBlock.RS_BLOCK_TABLE = [
+
+	// L
+	// M
+	// Q
+	// H
+
+	// 1
+	[1, 26, 19],
+	[1, 26, 16],
+	[1, 26, 13],
+	[1, 26, 9],
+	
+	// 2
+	[1, 44, 34],
+	[1, 44, 28],
+	[1, 44, 22],
+	[1, 44, 16],
+
+	// 3
+	[1, 70, 55],
+	[1, 70, 44],
+	[2, 35, 17],
+	[2, 35, 13],
+
+	// 4		
+	[1, 100, 80],
+	[2, 50, 32],
+	[2, 50, 24],
+	[4, 25, 9],
+	
+	// 5
+	[1, 134, 108],
+	[2, 67, 43],
+	[2, 33, 15, 2, 34, 16],
+	[2, 33, 11, 2, 34, 12],
+	
+	// 6
+	[2, 86, 68],
+	[4, 43, 27],
+	[4, 43, 19],
+	[4, 43, 15],
+	
+	// 7		
+	[2, 98, 78],
+	[4, 49, 31],
+	[2, 32, 14, 4, 33, 15],
+	[4, 39, 13, 1, 40, 14],
+	
+	// 8
+	[2, 121, 97],
+	[2, 60, 38, 2, 61, 39],
+	[4, 40, 18, 2, 41, 19],
+	[4, 40, 14, 2, 41, 15],
+	
+	// 9
+	[2, 146, 116],
+	[3, 58, 36, 2, 59, 37],
+	[4, 36, 16, 4, 37, 17],
+	[4, 36, 12, 4, 37, 13],
+	
+	// 10		
+	[2, 86, 68, 2, 87, 69],
+	[4, 69, 43, 1, 70, 44],
+	[6, 43, 19, 2, 44, 20],
+	[6, 43, 15, 2, 44, 16],
+
+	// 11
+	[4, 101, 81],
+	[1, 80, 50, 4, 81, 51],
+	[4, 50, 22, 4, 51, 23],
+	[3, 36, 12, 8, 37, 13],
+
+	// 12
+	[2, 116, 92, 2, 117, 93],
+	[6, 58, 36, 2, 59, 37],
+	[4, 46, 20, 6, 47, 21],
+	[7, 42, 14, 4, 43, 15],
+
+	// 13
+	[4, 133, 107],
+	[8, 59, 37, 1, 60, 38],
+	[8, 44, 20, 4, 45, 21],
+	[12, 33, 11, 4, 34, 12],
+
+	// 14
+	[3, 145, 115, 1, 146, 116],
+	[4, 64, 40, 5, 65, 41],
+	[11, 36, 16, 5, 37, 17],
+	[11, 36, 12, 5, 37, 13],
+
+	// 15
+	[5, 109, 87, 1, 110, 88],
+	[5, 65, 41, 5, 66, 42],
+	[5, 54, 24, 7, 55, 25],
+	[11, 36, 12],
+
+	// 16
+	[5, 122, 98, 1, 123, 99],
+	[7, 73, 45, 3, 74, 46],
+	[15, 43, 19, 2, 44, 20],
+	[3, 45, 15, 13, 46, 16],
+
+	// 17
+	[1, 135, 107, 5, 136, 108],
+	[10, 74, 46, 1, 75, 47],
+	[1, 50, 22, 15, 51, 23],
+	[2, 42, 14, 17, 43, 15],
+
+	// 18
+	[5, 150, 120, 1, 151, 121],
+	[9, 69, 43, 4, 70, 44],
+	[17, 50, 22, 1, 51, 23],
+	[2, 42, 14, 19, 43, 15],
+
+	// 19
+	[3, 141, 113, 4, 142, 114],
+	[3, 70, 44, 11, 71, 45],
+	[17, 47, 21, 4, 48, 22],
+	[9, 39, 13, 16, 40, 14],
+
+	// 20
+	[3, 135, 107, 5, 136, 108],
+	[3, 67, 41, 13, 68, 42],
+	[15, 54, 24, 5, 55, 25],
+	[15, 43, 15, 10, 44, 16],
+
+	// 21
+	[4, 144, 116, 4, 145, 117],
+	[17, 68, 42],
+	[17, 50, 22, 6, 51, 23],
+	[19, 46, 16, 6, 47, 17],
+
+	// 22
+	[2, 139, 111, 7, 140, 112],
+	[17, 74, 46],
+	[7, 54, 24, 16, 55, 25],
+	[34, 37, 13],
+
+	// 23
+	[4, 151, 121, 5, 152, 122],
+	[4, 75, 47, 14, 76, 48],
+	[11, 54, 24, 14, 55, 25],
+	[16, 45, 15, 14, 46, 16],
+
+	// 24
+	[6, 147, 117, 4, 148, 118],
+	[6, 73, 45, 14, 74, 46],
+	[11, 54, 24, 16, 55, 25],
+	[30, 46, 16, 2, 47, 17],
+
+	// 25
+	[8, 132, 106, 4, 133, 107],
+	[8, 75, 47, 13, 76, 48],
+	[7, 54, 24, 22, 55, 25],
+	[22, 45, 15, 13, 46, 16],
+
+	// 26
+	[10, 142, 114, 2, 143, 115],
+	[19, 74, 46, 4, 75, 47],
+	[28, 50, 22, 6, 51, 23],
+	[33, 46, 16, 4, 47, 17],
+
+	// 27
+	[8, 152, 122, 4, 153, 123],
+	[22, 73, 45, 3, 74, 46],
+	[8, 53, 23, 26, 54, 24],
+	[12, 45, 15, 28, 46, 16],
+
+	// 28
+	[3, 147, 117, 10, 148, 118],
+	[3, 73, 45, 23, 74, 46],
+	[4, 54, 24, 31, 55, 25],
+	[11, 45, 15, 31, 46, 16],
+
+	// 29
+	[7, 146, 116, 7, 147, 117],
+	[21, 73, 45, 7, 74, 46],
+	[1, 53, 23, 37, 54, 24],
+	[19, 45, 15, 26, 46, 16],
+
+	// 30
+	[5, 145, 115, 10, 146, 116],
+	[19, 75, 47, 10, 76, 48],
+	[15, 54, 24, 25, 55, 25],
+	[23, 45, 15, 25, 46, 16],
+
+	// 31
+	[13, 145, 115, 3, 146, 116],
+	[2, 74, 46, 29, 75, 47],
+	[42, 54, 24, 1, 55, 25],
+	[23, 45, 15, 28, 46, 16],
+
+	// 32
+	[17, 145, 115],
+	[10, 74, 46, 23, 75, 47],
+	[10, 54, 24, 35, 55, 25],
+	[19, 45, 15, 35, 46, 16],
+
+	// 33
+	[17, 145, 115, 1, 146, 116],
+	[14, 74, 46, 21, 75, 47],
+	[29, 54, 24, 19, 55, 25],
+	[11, 45, 15, 46, 46, 16],
+
+	// 34
+	[13, 145, 115, 6, 146, 116],
+	[14, 74, 46, 23, 75, 47],
+	[44, 54, 24, 7, 55, 25],
+	[59, 46, 16, 1, 47, 17],
+
+	// 35
+	[12, 151, 121, 7, 152, 122],
+	[12, 75, 47, 26, 76, 48],
+	[39, 54, 24, 14, 55, 25],
+	[22, 45, 15, 41, 46, 16],
+
+	// 36
+	[6, 151, 121, 14, 152, 122],
+	[6, 75, 47, 34, 76, 48],
+	[46, 54, 24, 10, 55, 25],
+	[2, 45, 15, 64, 46, 16],
+
+	// 37
+	[17, 152, 122, 4, 153, 123],
+	[29, 74, 46, 14, 75, 47],
+	[49, 54, 24, 10, 55, 25],
+	[24, 45, 15, 46, 46, 16],
+
+	// 38
+	[4, 152, 122, 18, 153, 123],
+	[13, 74, 46, 32, 75, 47],
+	[48, 54, 24, 14, 55, 25],
+	[42, 45, 15, 32, 46, 16],
+
+	// 39
+	[20, 147, 117, 4, 148, 118],
+	[40, 75, 47, 7, 76, 48],
+	[43, 54, 24, 22, 55, 25],
+	[10, 45, 15, 67, 46, 16],
+
+	// 40
+	[19, 148, 118, 6, 149, 119],
+	[18, 75, 47, 31, 76, 48],
+	[34, 54, 24, 34, 55, 25],
+	[20, 45, 15, 61, 46, 16]
+];
+
+QRRSBlock.getRSBlocks = function(typeNumber, errorCorrectLevel) {
+	
+	var rsBlock = QRRSBlock.getRsBlockTable(typeNumber, errorCorrectLevel);
+	
+	if (rsBlock === undefined) {
+		throw new Error("bad rs block @ typeNumber:" + typeNumber + "/errorCorrectLevel:" + errorCorrectLevel);
+	}
+
+	var length = rsBlock.length / 3;
+	
+	var list = [];
+	
+	for (var i = 0; i < length; i++) {
+
+		var count = rsBlock[i * 3 + 0];
+		var totalCount = rsBlock[i * 3 + 1];
+		var dataCount  = rsBlock[i * 3 + 2];
+
+		for (var j = 0; j < count; j++) {
+			list.push(new QRRSBlock(totalCount, dataCount) );	
+		}
+	}
+	
+	return list;
+};
+
+QRRSBlock.getRsBlockTable = function(typeNumber, errorCorrectLevel) {
+
+	switch(errorCorrectLevel) {
+	case QRErrorCorrectLevel.L :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 0];
+	case QRErrorCorrectLevel.M :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 1];
+	case QRErrorCorrectLevel.Q :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 2];
+	case QRErrorCorrectLevel.H :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 3];
+	default :
+		return undefined;
+	}
+};
+
+module.exports = QRRSBlock;
+
+QRModules["QRRSBlock"]=module.exports;})();
+(()=>{const module={exports:{}};const require=(id)=>QRModules[id.replace("./","")];
+var QRMode = require('./QRMode');
+var QRPolynomial = require('./QRPolynomial');
+var QRMath = require('./QRMath');
+var QRMaskPattern = require('./QRMaskPattern');
+
+var QRUtil = {
+
+    PATTERN_POSITION_TABLE : [
+        [],
+        [6, 18],
+        [6, 22],
+        [6, 26],
+        [6, 30],
+        [6, 34],
+        [6, 22, 38],
+        [6, 24, 42],
+        [6, 26, 46],
+        [6, 28, 50],
+        [6, 30, 54],        
+        [6, 32, 58],
+        [6, 34, 62],
+        [6, 26, 46, 66],
+        [6, 26, 48, 70],
+        [6, 26, 50, 74],
+        [6, 30, 54, 78],
+        [6, 30, 56, 82],
+        [6, 30, 58, 86],
+        [6, 34, 62, 90],
+        [6, 28, 50, 72, 94],
+        [6, 26, 50, 74, 98],
+        [6, 30, 54, 78, 102],
+        [6, 28, 54, 80, 106],
+        [6, 32, 58, 84, 110],
+        [6, 30, 58, 86, 114],
+        [6, 34, 62, 90, 118],
+        [6, 26, 50, 74, 98, 122],
+        [6, 30, 54, 78, 102, 126],
+        [6, 26, 52, 78, 104, 130],
+        [6, 30, 56, 82, 108, 134],
+        [6, 34, 60, 86, 112, 138],
+        [6, 30, 58, 86, 114, 142],
+        [6, 34, 62, 90, 118, 146],
+        [6, 30, 54, 78, 102, 126, 150],
+        [6, 24, 50, 76, 102, 128, 154],
+        [6, 28, 54, 80, 106, 132, 158],
+        [6, 32, 58, 84, 110, 136, 162],
+        [6, 26, 54, 82, 110, 138, 166],
+        [6, 30, 58, 86, 114, 142, 170]
+    ],
+
+    G15 : (1 << 10) | (1 << 8) | (1 << 5) | (1 << 4) | (1 << 2) | (1 << 1) | (1 << 0),
+    G18 : (1 << 12) | (1 << 11) | (1 << 10) | (1 << 9) | (1 << 8) | (1 << 5) | (1 << 2) | (1 << 0),
+    G15_MASK : (1 << 14) | (1 << 12) | (1 << 10)    | (1 << 4) | (1 << 1),
+
+    getBCHTypeInfo : function(data) {
+        var d = data << 10;
+        while (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G15) >= 0) {
+            d ^= (QRUtil.G15 << (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G15) ) );    
+        }
+        return ( (data << 10) | d) ^ QRUtil.G15_MASK;
+    },
+
+    getBCHTypeNumber : function(data) {
+        var d = data << 12;
+        while (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G18) >= 0) {
+            d ^= (QRUtil.G18 << (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G18) ) );    
+        }
+        return (data << 12) | d;
+    },
+
+    getBCHDigit : function(data) {
+
+        var digit = 0;
+
+        while (data !== 0) {
+            digit++;
+            data >>>= 1;
+        }
+
+        return digit;
+    },
+
+    getPatternPosition : function(typeNumber) {
+        return QRUtil.PATTERN_POSITION_TABLE[typeNumber - 1];
+    },
+
+    getMask : function(maskPattern, i, j) {
+        
+        switch (maskPattern) {
+            
+        case QRMaskPattern.PATTERN000 : return (i + j) % 2 === 0;
+        case QRMaskPattern.PATTERN001 : return i % 2 === 0;
+        case QRMaskPattern.PATTERN010 : return j % 3 === 0;
+        case QRMaskPattern.PATTERN011 : return (i + j) % 3 === 0;
+        case QRMaskPattern.PATTERN100 : return (Math.floor(i / 2) + Math.floor(j / 3) ) % 2 === 0;
+        case QRMaskPattern.PATTERN101 : return (i * j) % 2 + (i * j) % 3 === 0;
+        case QRMaskPattern.PATTERN110 : return ( (i * j) % 2 + (i * j) % 3) % 2 === 0;
+        case QRMaskPattern.PATTERN111 : return ( (i * j) % 3 + (i + j) % 2) % 2 === 0;
+
+        default :
+            throw new Error("bad maskPattern:" + maskPattern);
+        }
+    },
+
+    getErrorCorrectPolynomial : function(errorCorrectLength) {
+
+        var a = new QRPolynomial([1], 0);
+
+        for (var i = 0; i < errorCorrectLength; i++) {
+            a = a.multiply(new QRPolynomial([1, QRMath.gexp(i)], 0) );
+        }
+
+        return a;
+    },
+
+    getLengthInBits : function(mode, type) {
+
+        if (1 <= type && type < 10) {
+
+            // 1 - 9
+
+            switch(mode) {
+            case QRMode.MODE_NUMBER     : return 10;
+            case QRMode.MODE_ALPHA_NUM  : return 9;
+            case QRMode.MODE_8BIT_BYTE  : return 8;
+            case QRMode.MODE_KANJI      : return 8;
+            default :
+                throw new Error("mode:" + mode);
+            }
+
+        } else if (type < 27) {
+
+            // 10 - 26
+
+            switch(mode) {
+            case QRMode.MODE_NUMBER     : return 12;
+            case QRMode.MODE_ALPHA_NUM  : return 11;
+            case QRMode.MODE_8BIT_BYTE  : return 16;
+            case QRMode.MODE_KANJI      : return 10;
+            default :
+                throw new Error("mode:" + mode);
+            }
+
+        } else if (type < 41) {
+
+            // 27 - 40
+
+            switch(mode) {
+            case QRMode.MODE_NUMBER     : return 14;
+            case QRMode.MODE_ALPHA_NUM  : return 13;
+            case QRMode.MODE_8BIT_BYTE  : return 16;
+            case QRMode.MODE_KANJI      : return 12;
+            default :
+                throw new Error("mode:" + mode);
+            }
+
+        } else {
+            throw new Error("type:" + type);
+        }
+    },
+
+    getLostPoint : function(qrCode) {
+        
+        var moduleCount = qrCode.getModuleCount();
+        var lostPoint = 0;
+        var row = 0; 
+        var col = 0;
+
+        
+        // LEVEL1
+        
+        for (row = 0; row < moduleCount; row++) {
+
+            for (col = 0; col < moduleCount; col++) {
+
+                var sameCount = 0;
+                var dark = qrCode.isDark(row, col);
+
+                for (var r = -1; r <= 1; r++) {
+
+                    if (row + r < 0 || moduleCount <= row + r) {
+                        continue;
+                    }
+
+                    for (var c = -1; c <= 1; c++) {
+
+                        if (col + c < 0 || moduleCount <= col + c) {
+                            continue;
+                        }
+
+                        if (r === 0 && c === 0) {
+                            continue;
+                        }
+
+                        if (dark === qrCode.isDark(row + r, col + c) ) {
+                            sameCount++;
+                        }
+                    }
+                }
+
+                if (sameCount > 5) {
+                    lostPoint += (3 + sameCount - 5);
+                }
+            }
+        }
+
+        // LEVEL2
+
+        for (row = 0; row < moduleCount - 1; row++) {
+            for (col = 0; col < moduleCount - 1; col++) {
+                var count = 0;
+                if (qrCode.isDark(row,     col    ) ) count++;
+                if (qrCode.isDark(row + 1, col    ) ) count++;
+                if (qrCode.isDark(row,     col + 1) ) count++;
+                if (qrCode.isDark(row + 1, col + 1) ) count++;
+                if (count === 0 || count === 4) {
+                    lostPoint += 3;
+                }
+            }
+        }
+
+        // LEVEL3
+
+        for (row = 0; row < moduleCount; row++) {
+            for (col = 0; col < moduleCount - 6; col++) {
+                if (qrCode.isDark(row, col) && 
+                        !qrCode.isDark(row, col + 1) && 
+                         qrCode.isDark(row, col + 2) && 
+                         qrCode.isDark(row, col + 3) && 
+                         qrCode.isDark(row, col + 4) && 
+                        !qrCode.isDark(row, col + 5) && 
+                         qrCode.isDark(row, col + 6) ) {
+                    lostPoint += 40;
+                }
+            }
+        }
+
+        for (col = 0; col < moduleCount; col++) {
+            for (row = 0; row < moduleCount - 6; row++) {
+                if (qrCode.isDark(row, col) &&
+                        !qrCode.isDark(row + 1, col) &&
+                         qrCode.isDark(row + 2, col) &&
+                         qrCode.isDark(row + 3, col) &&
+                         qrCode.isDark(row + 4, col) &&
+                        !qrCode.isDark(row + 5, col) &&
+                         qrCode.isDark(row + 6, col) ) {
+                    lostPoint += 40;
+                }
+            }
+        }
+
+        // LEVEL4
+        
+        var darkCount = 0;
+
+        for (col = 0; col < moduleCount; col++) {
+            for (row = 0; row < moduleCount; row++) {
+                if (qrCode.isDark(row, col) ) {
+                    darkCount++;
+                }
+            }
+        }
+        
+        var ratio = Math.abs(100 * darkCount / moduleCount / moduleCount - 50) / 5;
+        lostPoint += ratio * 10;
+
+        return lostPoint;       
+    }
+
+};
+
+module.exports = QRUtil;
+
+QRModules["QRUtil"]=module.exports;})();
+(()=>{const module={exports:{}};const require=(id)=>QRModules[id.replace("./","")];
+//---------------------------------------------------------------------
+// QRCode for JavaScript
+//
+// Copyright (c) 2009 Kazuhiko Arase
+//
+// URL: http://www.d-project.com/
+//
+// Licensed under the MIT license:
+//   http://www.opensource.org/licenses/mit-license.php
+//
+// The word "QR Code" is registered trademark of 
+// DENSO WAVE INCORPORATED
+//   http://www.denso-wave.com/qrcode/faqpatent-e.html
+//
+//---------------------------------------------------------------------
+// Modified to work in node for this project (and some refactoring)
+//---------------------------------------------------------------------
+
+var QR8bitByte = require('./QR8bitByte');
+var QRUtil = require('./QRUtil');
+var QRPolynomial = require('./QRPolynomial');
+var QRRSBlock = require('./QRRSBlock');
+var QRBitBuffer = require('./QRBitBuffer');
+
+function QRCode(typeNumber, errorCorrectLevel) {
+	this.typeNumber = typeNumber;
+	this.errorCorrectLevel = errorCorrectLevel;
+	this.modules = null;
+	this.moduleCount = 0;
+	this.dataCache = null;
+	this.dataList = [];
+}
+
+QRCode.prototype = {
+	
+	addData : function(data) {
+		var newData = new QR8bitByte(data);
+		this.dataList.push(newData);
+		this.dataCache = null;
+	},
+	
+	isDark : function(row, col) {
+		if (row < 0 || this.moduleCount <= row || col < 0 || this.moduleCount <= col) {
+			throw new Error(row + "," + col);
+		}
+		return this.modules[row][col];
+	},
+
+	getModuleCount : function() {
+		return this.moduleCount;
+	},
+	
+	make : function() {
+		// Calculate automatically typeNumber if provided is < 1
+		if (this.typeNumber < 1 ){
+			var typeNumber = 1;
+			for (typeNumber = 1; typeNumber < 40; typeNumber++) {
+				var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, this.errorCorrectLevel);
+
+				var buffer = new QRBitBuffer();
+				var totalDataCount = 0;
+				for (var i = 0; i < rsBlocks.length; i++) {
+					totalDataCount += rsBlocks[i].dataCount;
+				}
+
+				for (var x = 0; x < this.dataList.length; x++) {
+					var data = this.dataList[x];
+					buffer.put(data.mode, 4);
+					buffer.put(data.getLength(), QRUtil.getLengthInBits(data.mode, typeNumber) );
+					data.write(buffer);
+				}
+				if (buffer.getLengthInBits() <= totalDataCount * 8)
+					break;
+			}
+			this.typeNumber = typeNumber;
+		}
+		this.makeImpl(false, this.getBestMaskPattern() );
+	},
+	
+	makeImpl : function(test, maskPattern) {
+		
+		this.moduleCount = this.typeNumber * 4 + 17;
+		this.modules = new Array(this.moduleCount);
+		
+		for (var row = 0; row < this.moduleCount; row++) {
+			
+			this.modules[row] = new Array(this.moduleCount);
+			
+			for (var col = 0; col < this.moduleCount; col++) {
+				this.modules[row][col] = null;//(col + row) % 3;
+			}
+		}
+	
+		this.setupPositionProbePattern(0, 0);
+		this.setupPositionProbePattern(this.moduleCount - 7, 0);
+		this.setupPositionProbePattern(0, this.moduleCount - 7);
+		this.setupPositionAdjustPattern();
+		this.setupTimingPattern();
+		this.setupTypeInfo(test, maskPattern);
+		
+		if (this.typeNumber >= 7) {
+			this.setupTypeNumber(test);
+		}
+	
+		if (this.dataCache === null) {
+			this.dataCache = QRCode.createData(this.typeNumber, this.errorCorrectLevel, this.dataList);
+		}
+	
+		this.mapData(this.dataCache, maskPattern);
+	},
+
+	setupPositionProbePattern : function(row, col)  {
+		
+		for (var r = -1; r <= 7; r++) {
+			
+			if (row + r <= -1 || this.moduleCount <= row + r) continue;
+			
+			for (var c = -1; c <= 7; c++) {
+				
+				if (col + c <= -1 || this.moduleCount <= col + c) continue;
+				
+				if ( (0 <= r && r <= 6 && (c === 0 || c === 6) ) || 
+                     (0 <= c && c <= 6 && (r === 0 || r === 6) ) || 
+                     (2 <= r && r <= 4 && 2 <= c && c <= 4) ) {
+					this.modules[row + r][col + c] = true;
+				} else {
+					this.modules[row + r][col + c] = false;
+				}
+			}		
+		}		
+	},
+	
+	getBestMaskPattern : function() {
+	
+		var minLostPoint = 0;
+		var pattern = 0;
+	
+		for (var i = 0; i < 8; i++) {
+			
+			this.makeImpl(true, i);
+	
+			var lostPoint = QRUtil.getLostPoint(this);
+	
+			if (i === 0 || minLostPoint >  lostPoint) {
+				minLostPoint = lostPoint;
+				pattern = i;
+			}
+		}
+	
+		return pattern;
+	},
+	
+	createMovieClip : function(target_mc, instance_name, depth) {
+	
+		var qr_mc = target_mc.createEmptyMovieClip(instance_name, depth);
+		var cs = 1;
+	
+		this.make();
+
+		for (var row = 0; row < this.modules.length; row++) {
+			
+			var y = row * cs;
+			
+			for (var col = 0; col < this.modules[row].length; col++) {
+	
+				var x = col * cs;
+				var dark = this.modules[row][col];
+			
+				if (dark) {
+					qr_mc.beginFill(0, 100);
+					qr_mc.moveTo(x, y);
+					qr_mc.lineTo(x + cs, y);
+					qr_mc.lineTo(x + cs, y + cs);
+					qr_mc.lineTo(x, y + cs);
+					qr_mc.endFill();
+				}
+			}
+		}
+		
+		return qr_mc;
+	},
+
+	setupTimingPattern : function() {
+		
+		for (var r = 8; r < this.moduleCount - 8; r++) {
+			if (this.modules[r][6] !== null) {
+				continue;
+			}
+			this.modules[r][6] = (r % 2 === 0);
+		}
+	
+		for (var c = 8; c < this.moduleCount - 8; c++) {
+			if (this.modules[6][c] !== null) {
+				continue;
+			}
+			this.modules[6][c] = (c % 2 === 0);
+		}
+	},
+	
+	setupPositionAdjustPattern : function() {
+	
+		var pos = QRUtil.getPatternPosition(this.typeNumber);
+		
+		for (var i = 0; i < pos.length; i++) {
+		
+			for (var j = 0; j < pos.length; j++) {
+			
+				var row = pos[i];
+				var col = pos[j];
+				
+				if (this.modules[row][col] !== null) {
+					continue;
+				}
+				
+				for (var r = -2; r <= 2; r++) {
+				
+					for (var c = -2; c <= 2; c++) {
+					
+						if (Math.abs(r) === 2 || 
+                            Math.abs(c) === 2 ||
+                            (r === 0 && c === 0) ) {
+							this.modules[row + r][col + c] = true;
+						} else {
+							this.modules[row + r][col + c] = false;
+						}
+					}
+				}
+			}
+		}
+	},
+	
+	setupTypeNumber : function(test) {
+	
+		var bits = QRUtil.getBCHTypeNumber(this.typeNumber);
+        var mod;
+	
+		for (var i = 0; i < 18; i++) {
+			mod = (!test && ( (bits >> i) & 1) === 1);
+			this.modules[Math.floor(i / 3)][i % 3 + this.moduleCount - 8 - 3] = mod;
+		}
+	
+		for (var x = 0; x < 18; x++) {
+			mod = (!test && ( (bits >> x) & 1) === 1);
+			this.modules[x % 3 + this.moduleCount - 8 - 3][Math.floor(x / 3)] = mod;
+		}
+	},
+	
+	setupTypeInfo : function(test, maskPattern) {
+	
+		var data = (this.errorCorrectLevel << 3) | maskPattern;
+		var bits = QRUtil.getBCHTypeInfo(data);
+        var mod;
+	
+		// vertical		
+		for (var v = 0; v < 15; v++) {
+	
+			mod = (!test && ( (bits >> v) & 1) === 1);
+	
+			if (v < 6) {
+				this.modules[v][8] = mod;
+			} else if (v < 8) {
+				this.modules[v + 1][8] = mod;
+			} else {
+				this.modules[this.moduleCount - 15 + v][8] = mod;
+			}
+		}
+	
+		// horizontal
+		for (var h = 0; h < 15; h++) {
+	
+			mod = (!test && ( (bits >> h) & 1) === 1);
+			
+			if (h < 8) {
+				this.modules[8][this.moduleCount - h - 1] = mod;
+			} else if (h < 9) {
+				this.modules[8][15 - h - 1 + 1] = mod;
+			} else {
+				this.modules[8][15 - h - 1] = mod;
+			}
+		}
+	
+		// fixed module
+		this.modules[this.moduleCount - 8][8] = (!test);
+	
+	},
+	
+	mapData : function(data, maskPattern) {
+		
+		var inc = -1;
+		var row = this.moduleCount - 1;
+		var bitIndex = 7;
+		var byteIndex = 0;
+		
+		for (var col = this.moduleCount - 1; col > 0; col -= 2) {
+	
+			if (col === 6) col--;
+	
+			while (true) {
+	
+				for (var c = 0; c < 2; c++) {
+					
+					if (this.modules[row][col - c] === null) {
+						
+						var dark = false;
+	
+						if (byteIndex < data.length) {
+							dark = ( ( (data[byteIndex] >>> bitIndex) & 1) === 1);
+						}
+	
+						var mask = QRUtil.getMask(maskPattern, row, col - c);
+	
+						if (mask) {
+							dark = !dark;
+						}
+						
+						this.modules[row][col - c] = dark;
+						bitIndex--;
+	
+						if (bitIndex === -1) {
+							byteIndex++;
+							bitIndex = 7;
+						}
+					}
+				}
+								
+				row += inc;
+	
+				if (row < 0 || this.moduleCount <= row) {
+					row -= inc;
+					inc = -inc;
+					break;
+				}
+			}
+		}
+		
+	}
+
+};
+
+QRCode.PAD0 = 0xEC;
+QRCode.PAD1 = 0x11;
+
+QRCode.createData = function(typeNumber, errorCorrectLevel, dataList) {
+	
+	var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, errorCorrectLevel);
+	
+	var buffer = new QRBitBuffer();
+	
+	for (var i = 0; i < dataList.length; i++) {
+		var data = dataList[i];
+		buffer.put(data.mode, 4);
+		buffer.put(data.getLength(), QRUtil.getLengthInBits(data.mode, typeNumber) );
+		data.write(buffer);
+	}
+
+	// calc num max data.
+	var totalDataCount = 0;
+	for (var x = 0; x < rsBlocks.length; x++) {
+		totalDataCount += rsBlocks[x].dataCount;
+	}
+
+	if (buffer.getLengthInBits() > totalDataCount * 8) {
+		throw new Error("code length overflow. (" + 
+            buffer.getLengthInBits() + 
+            ">" +  
+            totalDataCount * 8 + 
+            ")");
+	}
+
+	// end code
+	if (buffer.getLengthInBits() + 4 <= totalDataCount * 8) {
+		buffer.put(0, 4);
+	}
+
+	// padding
+	while (buffer.getLengthInBits() % 8 !== 0) {
+		buffer.putBit(false);
+	}
+
+	// padding
+	while (true) {
+		
+		if (buffer.getLengthInBits() >= totalDataCount * 8) {
+			break;
+		}
+		buffer.put(QRCode.PAD0, 8);
+		
+		if (buffer.getLengthInBits() >= totalDataCount * 8) {
+			break;
+		}
+		buffer.put(QRCode.PAD1, 8);
+	}
+
+	return QRCode.createBytes(buffer, rsBlocks);
+};
+
+QRCode.createBytes = function(buffer, rsBlocks) {
+
+	var offset = 0;
+	
+	var maxDcCount = 0;
+	var maxEcCount = 0;
+	
+	var dcdata = new Array(rsBlocks.length);
+	var ecdata = new Array(rsBlocks.length);
+	
+	for (var r = 0; r < rsBlocks.length; r++) {
+
+		var dcCount = rsBlocks[r].dataCount;
+		var ecCount = rsBlocks[r].totalCount - dcCount;
+
+		maxDcCount = Math.max(maxDcCount, dcCount);
+		maxEcCount = Math.max(maxEcCount, ecCount);
+		
+		dcdata[r] = new Array(dcCount);
+		
+		for (var i = 0; i < dcdata[r].length; i++) {
+			dcdata[r][i] = 0xff & buffer.buffer[i + offset];
+		}
+		offset += dcCount;
+		
+		var rsPoly = QRUtil.getErrorCorrectPolynomial(ecCount);
+		var rawPoly = new QRPolynomial(dcdata[r], rsPoly.getLength() - 1);
+
+		var modPoly = rawPoly.mod(rsPoly);
+		ecdata[r] = new Array(rsPoly.getLength() - 1);
+		for (var x = 0; x < ecdata[r].length; x++) {
+            var modIndex = x + modPoly.getLength() - ecdata[r].length;
+			ecdata[r][x] = (modIndex >= 0)? modPoly.get(modIndex) : 0;
+		}
+
+	}
+	
+	var totalCodeCount = 0;
+	for (var y = 0; y < rsBlocks.length; y++) {
+		totalCodeCount += rsBlocks[y].totalCount;
+	}
+
+	var data = new Array(totalCodeCount);
+	var index = 0;
+
+	for (var z = 0; z < maxDcCount; z++) {
+		for (var s = 0; s < rsBlocks.length; s++) {
+			if (z < dcdata[s].length) {
+				data[index++] = dcdata[s][z];
+			}
+		}
+	}
+
+	for (var xx = 0; xx < maxEcCount; xx++) {
+		for (var t = 0; t < rsBlocks.length; t++) {
+			if (xx < ecdata[t].length) {
+				data[index++] = ecdata[t][xx];
+			}
+		}
+	}
+
+	return data;
+
+};
+
+module.exports = QRCode;
+
+QRModules["index"]=module.exports;})();
+const QRCode=QRModules.index;
+
+const QUESTIONS={"mc":[{"id":"c01","tag":"Parkinsoniana • giros y bloqueos","case":"Persona de 72 años con enfermedad de Parkinson, sin deterioro cognitivo relevante. Camina 200 m por pasillo recto sin ayuda, pero al girar para ingresar al baño presenta episodios de congelamiento, pasos muy cortos y dos caídas recientes. La fuerza de extremidades inferiores permite levantarse de una silla sin asistencia.","task":"¿Qué objetivo específico prioriza el riesgo y la limitación descritos?","options":[{"id":"a","text":"Incrementar la fuerza extensora de rodilla para facilitar las transferencias y disminuir la inestabilidad al incorporarse desde una silla."},{"id":"b","text":"Mejorar la continuidad y estabilidad de la marcha durante los giros para reducir bloqueos y facilitar el acceso seguro al baño."},{"id":"c","text":"Aumentar la resistencia aeróbica para sostener trayectos más extensos y disminuir las detenciones durante los recorridos rectos."},{"id":"d","text":"Optimizar la amplitud de movimiento del tobillo para aumentar el despeje del pie y reducir tropiezos en superficies regulares."}],"answer":"b","rationale":"Predominan congelamiento y caídas durante los giros; el objetivo debe priorizar seguridad y continuidad del desplazamiento en ese contexto, no fuerza o resistencia ya suficientes."},{"id":"c02","tag":"Parkinsoniana • doble tarea","case":"Usuario de 68 años con enfermedad de Parkinson. En marcha habitual mantiene un trayecto estable, pero al conversar mientras cruza un espacio concurrido acorta la zancada, acelera involuntariamente los pasos y pierde estabilidad. Necesita volver a desplazarse en el mercado acompañado. No refiere dolor ni limitación articular significativa.","task":"¿Cuál objetivo específico se relaciona mejor con el problema funcional?","options":[{"id":"a","text":"Aumentar la velocidad máxima de marcha para reducir el tiempo de exposición al tránsito peatonal durante las compras habituales."},{"id":"b","text":"Mejorar la resistencia muscular de las extremidades inferiores para sostener desplazamientos prolongados durante las compras."},{"id":"c","text":"Incrementar la amplitud de extensión de cadera para favorecer una mayor longitud del paso en trayectos sin interferencias."},{"id":"d","text":"Optimizar el control de la marcha ante demandas atencionales para favorecer desplazamientos estables en entornos concurridos."}],"answer":"d","rationale":"La dificultad emerge al añadir demanda atencional; la prioridad es controlar la marcha en ese contexto, no maximizar velocidad ni abordar déficits no demostrados."},{"id":"c03","tag":"Atáxica sensitiva • ausencia de visión","case":"Mujer de 61 años con neuropatía sensitiva de predominio distal. Presenta pérdida de sentido de posición en ambos tobillos, Romberg positivo y marcada inestabilidad al caminar de noche, con mejor desempeño cuando mira el suelo. La fuerza muscular está relativamente conservada. Solicita ir con seguridad desde el dormitorio hasta el baño.","task":"¿Qué objetivo específico responde mejor a la limitación identificada?","options":[{"id":"a","text":"Mejorar la seguridad del desplazamiento con estrategias compensatorias y apoyos adecuados ante información propioceptiva reducida."},{"id":"b","text":"Recuperar completamente la propiocepción del tobillo para eliminar la dependencia visual durante los desplazamientos nocturnos."},{"id":"c","text":"Incrementar la potencia de los flexores plantares para prolongar el paso y reducir las oscilaciones durante la marcha nocturna."},{"id":"d","text":"Aumentar la velocidad habitual de marcha para disminuir el tiempo necesario al trasladarse entre dormitorio y baño."}],"answer":"a","rationale":"En la ataxia sensitiva con déficit propioceptivo no está garantizada la restitución completa; el objetivo prioritario es seguridad funcional con compensaciones y ayudas pertinentes."},{"id":"c04","tag":"Atáxica sensitiva • suelo irregular","case":"Persona de 57 años con alteración de la sensibilidad profunda en ambos pies. Camina sola en piso liso y bien iluminado, pero pierde estabilidad en veredas irregulares y depende de mirar sus pies al sortear desniveles. Quiere retomar desplazamientos breves al almacén del barrio; no presenta debilidad proximal relevante.","task":"¿Qué objetivo específico sería más pertinente para esta situación?","options":[{"id":"a","text":"Incrementar la fuerza proximal de cadera para estabilizar la pelvis y aumentar la longitud del paso en superficies uniformes."},{"id":"b","text":"Disminuir la dependencia de apoyos externos para restablecer la marcha autónoma sin ayudas en todas las superficies."},{"id":"c","text":"Mejorar el equilibrio funcional y el uso de apoyos seguros para negociar desniveles y facilitar trayectos comunitarios."},{"id":"d","text":"Optimizar el ritmo de marcha en terreno plano para completar trayectos comunitarios con mayor velocidad y continuidad."}],"answer":"c","rationale":"La restricción ocurre al afrontar desniveles con déficit sensitivo; la meta funcional es gestionar ese entorno con seguridad, no retirar ayudas ni aumentar velocidad prematuramente."},{"id":"c05","tag":"Cerebelosa • desequilibrio lateral","case":"Paciente de 45 años con ataxia cerebelosa de curso estable. Presenta base de sustentación amplia, oscilaciones mediolaterales e irregularidad de pasos, con dificultad para cambiar de dirección dentro de su domicilio. La sensibilidad de posición está preservada y mirar el suelo no corrige la inestabilidad. Ha tropezado dos veces este mes.","task":"¿Cuál objetivo específico es clínicamente más pertinente?","options":[{"id":"a","text":"Incrementar la integración de señales propioceptivas para reducir la dependencia visual y sostener giros en espacios cerrados."},{"id":"b","text":"Aumentar la velocidad de desplazamiento para completar los giros domiciliarios antes de que aparezca fatiga muscular."},{"id":"c","text":"Normalizar el ancho de la base de apoyo para alcanzar un patrón estético simétrico durante la marcha intradomiciliaria."},{"id":"d","text":"Mejorar el control dinámico y la seguridad durante cambios de dirección para reducir tropiezos en espacios domiciliarios."}],"answer":"d","rationale":"La ataxia cerebelosa causa inestabilidad dinámica; es preferible priorizar cambios de dirección seguros en lugar de forzar una base estrecha o suponer déficit sensitivo."},{"id":"c06","tag":"Cerebelosa • variabilidad del paso","case":"Usuario de 39 años con síndrome cerebeloso. Su marcha es irregular por dismetría y variaciones marcadas en tiempo y longitud de paso. Puede recorrer 100 m acompañado, pero al pasar por una puerta estrecha aumenta la oscilación del tronco y precisa asistencia. La fuerza y la sensibilidad profunda son suficientes para la tarea.","task":"¿Qué objetivo específico aborda de forma más directa el problema?","options":[{"id":"a","text":"Incrementar la fuerza de tronco para sostener una postura completamente rígida durante el paso por superficies estrechas."},{"id":"b","text":"Mejorar la regulación de pasos y la estabilidad en espacios restringidos para favorecer desplazamientos con menor asistencia."},{"id":"c","text":"Restituir la coordinación cerebelosa normal para eliminar la dismetría antes de practicar marcha en espacios reducidos."},{"id":"d","text":"Aumentar la resistencia a la caminata continua para superar distancias mayores antes de abordar cambios de dirección."}],"answer":"b","rationale":"El objetivo específico debe concentrarse en la regularidad y estabilidad funcional al cruzar espacios reducidos; no es realista prometer normalización completa."},{"id":"c07","tag":"Hemipléjica • despeje del pie","case":"Mujer de 58 años, seis meses tras accidente cerebrovascular con hemiparesia derecha. Camina con bastón y presenta arrastre de la punta del pie derecho durante el balanceo, con circunducción compensatoria y varios tropiezos. En apoyo mantiene estabilidad aceptable. Desea desplazarse con seguridad entre las habitaciones de su casa.","task":"¿Qué objetivo específico corresponde a la alteración predominante?","options":[{"id":"a","text":"Incrementar la resistencia aeróbica para sostener caminatas más largas y disminuir el número de pausas entre habitaciones."},{"id":"b","text":"Mejorar la estabilidad de la rodilla durante el apoyo para limitar episodios de colapso en los desplazamientos domésticos."},{"id":"c","text":"Optimizar el despeje del pie durante el balanceo para reducir tropiezos y facilitar la marcha segura dentro del hogar."},{"id":"d","text":"Aumentar la velocidad de marcha para reducir la duración del apoyo en el lado afectado y favorecer traslados interiores."}],"answer":"c","rationale":"El arrastre en balanceo, con apoyo relativamente estable, sitúa el despeje del pie como prioridad y requiere explorar estrategias funcionales y ayudas según valoración."},{"id":"c08","tag":"Hemipléjica • control en apoyo","case":"Hombre de 64 años con hemiparesia izquierda tras accidente cerebrovascular. Durante la fase de apoyo sobre el miembro afectado presenta hiperextensión brusca de rodilla y temor a perder el equilibrio, aunque el pie despeja adecuadamente en balanceo. Evita caminar por la terraza de su vivienda a pesar de tolerar recorridos breves en interiores.","task":"¿Cuál objetivo específico se alinea mejor con los hallazgos?","options":[{"id":"a","text":"Mejorar el control y la estabilidad de rodilla en apoyo para favorecer desplazamientos seguros hacia la terraza del hogar."},{"id":"b","text":"Incrementar la flexión de rodilla en balanceo para facilitar el despeje del pie y reducir tropiezos en espacios interiores."},{"id":"c","text":"Optimizar la cadencia de marcha para aumentar la velocidad al cruzar la terraza y disminuir la duración de la exposición."},{"id":"d","text":"Aumentar la fuerza global de la extremidad sana para compensar el déficit de apoyo del lado afectado durante la marcha."}],"answer":"a","rationale":"El hallazgo prioritario es inestabilidad en la fase de apoyo con hiperextensión de rodilla; el balanceo está conservado y la meta es movilidad segura."},{"id":"c09","tag":"Atetósica • movimientos variables","case":"Persona de 24 años con parálisis cerebral discinética y movimientos atetósicos de tronco y extremidades. Puede caminar distancias cortas con ayuda, pero el esfuerzo por acelerar aumenta los movimientos involuntarios y la variabilidad del paso. Requiere menor asistencia para recorrer el pasillo del centro de estudios; su movilidad articular es funcional.","task":"¿Qué objetivo específico expresa una prioridad alcanzable?","options":[{"id":"a","text":"Aumentar la velocidad de marcha para reducir el tiempo de desplazamiento, aun cuando aumenten los movimientos involuntarios."},{"id":"b","text":"Mejorar la estabilidad funcional a una velocidad tolerable para facilitar trayectos cortos con la asistencia necesaria."},{"id":"c","text":"Normalizar el tono muscular de tronco y extremidades para suprimir los movimientos atetósicos durante la marcha."},{"id":"d","text":"Incrementar el rango articular de las extremidades inferiores para lograr pasos más largos durante los traslados diarios."}],"answer":"b","rationale":"Los movimientos discinéticos pueden aumentar con esfuerzo; la meta razonable es seguridad, estabilidad y menor carga de asistencia, sin prometer abolir movimientos."},{"id":"c10","tag":"Atetósica • participación comunitaria","case":"Mujer de 30 años con patrón de marcha discinético-atetósico. Durante trayectos cortos usa un andador y mantiene independencia parcial, pero en lugares concurridos aparecen oscilaciones y detenciones imprevistas que elevan el riesgo de caída. Quiere asistir a reuniones comunitarias y no presenta un déficit de fuerza aislado predominante.","task":"¿Cuál objetivo específico representa mejor la necesidad funcional?","options":[{"id":"a","text":"Incrementar la fuerza máxima de los miembros inferiores para aumentar la longitud del paso en cualquier entorno comunitario."},{"id":"b","text":"Retirar progresivamente el andador para promover autonomía completa durante traslados en espacios concurridos."},{"id":"c","text":"Reducir la variabilidad del movimiento hasta eliminar las pausas involuntarias antes de permitir participación comunitaria."},{"id":"d","text":"Optimizar la seguridad del desplazamiento con apoyos apropiados para favorecer la participación en reuniones comunitarias."}],"answer":"d","rationale":"La prioridad es participación segura en entornos complejos con ayudas apropiadas, no retirar apoyos o prometer eliminar completamente la discinesia."}],"open":[{"id":"d01","tag":"Desarrollo • objetivo general (parkinsoniana)","case":"Persona de 70 años con enfermedad de Parkinson. Se desplaza con independencia dentro de casa, pero tiene congelamiento al iniciar la marcha y al girar en espacios estrechos; durante el último mes sufrió una caída sin lesión. Evita salir a comprar porque teme quedar bloqueada frente a otras personas. La prioridad expresada es volver a comprar acompañada con seguridad.","task":"Formula UN objetivo general terapéutico que integre capacidad funcional, seguridad y participación comunitaria. No describas una técnica de tratamiento ni prometas eliminar la enfermedad.","rubric":[{"key":"r1","label":"Reconoce bloqueos, giros y riesgo funcional relevantes","max":2},{"key":"r2","label":"Utiliza un verbo de resultado y una capacidad funcional clara","max":2},{"key":"r3","label":"Incorpora seguridad y participación comunitaria significativa","max":3},{"key":"r4","label":"Propone una finalidad realista sin confundir técnica y objetivo","max":2},{"key":"r5","label":"Redacción precisa, integrada y comprensible","max":1}],"guide":"Ejemplo orientador: mejorar la capacidad de iniciar y mantener desplazamientos seguros, incluidos giros, para favorecer la participación en compras acompañadas en su comunidad. Se aceptan formulaciones equivalentes razonadas."},{"id":"d02","tag":"Desarrollo • específicos y operacional (hemipléjica)","case":"Hombre de 62 años, cinco meses después de accidente cerebrovascular con hemiparesia izquierda. Utiliza bastón; en balanceo arrastra la punta del pie izquierdo y en apoyo presenta control inestable de rodilla. El Timed Up and Go es de 26 segundos y se registran dos tropiezos recientes sin caída. Desea caminar con seguridad dentro de su hogar.","task":"Redacta DOS objetivos específicos diferentes (uno para el balanceo y otro para el apoyo) y UN objetivo operacional SMART asociado a uno de ellos. Utiliza el TUG u otro indicador pertinente, con meta y plazo justificados; no plantees una técnica como objetivo.","rubric":[{"key":"r1","label":"Objetivo específico pertinente al despeje del pie en balanceo","max":2},{"key":"r2","label":"Objetivo específico pertinente al control de rodilla en apoyo","max":2},{"key":"r3","label":"Integra la finalidad de marcha segura dentro del hogar","max":2},{"key":"r4","label":"Objetivo operacional con indicador, meta y plazo coherentes","max":3},{"key":"r5","label":"Diferencia objetivos de técnicas y evita metas inseguras","max":1}],"guide":"Se esperan dos capacidades distintas, una relativa al despeje del pie y otra al control durante apoyo, vinculadas a marcha segura en domicilio. La meta TUG ha de ser una propuesta razonada, no un valor universal; también son válidos otros indicadores funcionales pertinentes."}]};
+// Rúbrica automática explícita: no es una evaluación semántica por IA.
+// Se usan componentes estructurados, vocabulario clínico y plazos para orientar una revisión docente.
+const LIMITS={d01:{objetivo:[25,75]},d02:{balanceo:[12,45],apoyo:[12,45],operacional:[18,65]}};
+const RUBRIC={
+ d01:[
+  {title:'Verbo de resultado y capacidad funcional',max:2,detail:'Verbo terapéutico + marcha, movilidad o desplazamiento'},
+  {title:'Alteración prioritaria de Parkinson',max:2,detail:'Inicio/congelamiento y cambios de dirección/giros'},
+  {title:'Seguridad y riesgo funcional',max:2,detail:'Seguridad/estabilidad y prevención de caídas o bloqueos'},
+  {title:'Participación significativa',max:2,detail:'Compra/mercado y contexto comunitario o acompañamiento'},
+  {title:'Pertinencia y extensión',max:2,detail:'Sin promesas de curación ni confundir técnicas con resultados; 25–75 palabras'}
+ ],
+ d02:[
+  {title:'Objetivo de balanceo',max:2,detail:'Despeje del pie/arrastre de punta en balanceo'},
+  {title:'Objetivo de apoyo',max:2,detail:'Control de rodilla/estabilidad en fase de apoyo'},
+  {title:'Finalidad funcional y seguridad',max:2,detail:'Desplazarse seguro en casa y reducir tropiezos o caídas'},
+  {title:'Operacional SMART',max:3,detail:'Indicador, cambio medible y plazo explícito y coherente'},
+  {title:'Pertinencia y extensión',max:1,detail:'Sin técnicas como objetivo, no promesas absolutas; extensiones 12–45/12–45/18–65 palabras'}
+ ]
+};
+const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();
+function countWords(s){return String(s||'').trim().split(/\s+/).filter(Boolean).length}
+const any=(s,re)=>re.test(norm(s));
+const goodVerb=/\b(mejorar|optimizar|incrementar|aumentar|favorecer|recuperar|desarrollar|facilitar|mantener|promover|fortalecer|potenciar)\b/;
+const func=/\b(marcha|camina\w*|desplaza\w*|movilidad|deambula\w*|locomocion)\b/;
+const techniques=/\b(realizar ejercicios|aplicar electroterapia|hacer masajes|aplicar ultrasonido|realizar masaje|utilizar laser|hacer sentadillas)\b/;
+const impossible=/\b(curar|eliminar (?:por completo|definitivamente|totalmente)|normalizar por completo|suprimir completamente|garantizar que nunca|revertir el parkinson|eliminar la hemiparesia)\b/;
+const hasTime=s=>/\b(\d{1,2}|dos|tres|cuatro|seis|ocho|diez|doce)\s*(semanas?|mes(?:es)?|dias?)\b/.test(norm(s));
+function checkLimits(id,fields){const lim=LIMITS[id];if(!lim)return {valid:false,error:'Pregunta desconocida'};for(const [key,[min,max]] of Object.entries(lim)){if(typeof fields?.[key]!=='string')return {valid:false,error:`Falta el apartado ${key}`};const n=countWords(fields[key]);if(n<min||n>max)return {valid:false,error:`${key}: escribe entre ${min} y ${max} palabras (actual: ${n}).`};if(fields[key].length>1500)return {valid:false,error:'El texto es demasiado extenso.'}}return {valid:true}}
+function autoEvaluate(id,fields){if(id==='d01'){
+  const s=norm(fields.objetivo);const start=any(s,/\b(inicia\w*|arranca\w*|comenz\w*|congel\w*|bloque\w*)\b/),turn=any(s,/\b(giro\w*|girar|direccion\w*|espacios estrechos)\b/),safe=any(s,/\b(segur\w*|estabil\w*|riesgo\w*)\b/),falls=any(s,/\b(caida\w*|tropiez\w*|bloque\w*|congel\w*)\b/),shopping=any(s,/\b(compr\w*|mercado|tienda\w*|almacen\w*|supermercado)\b/),context=any(s,/\b(comunidad\w*|comunitari\w*|acompan\w*|exterior\w*|fuera del hogar|barrio)\b/);
+  const scores=[Number(goodVerb.test(s))+Number(func.test(s)),Number(start)+Number(turn),Number(safe)+Number(falls),Number(shopping)+Number(context),Number(!techniques.test(s)&&!impossible.test(s))+Number(countWords(s)>=25&&countWords(s)<=75)];
+  return build(id,scores,[['Usar un verbo de resultado','Expresar la capacidad de marcha o desplazamiento'],['Referirse al bloqueo/inicio','Incluir giros o cambios de dirección'],['Incluir seguridad/estabilidad','Relacionarlo con riesgo de caída o bloqueo'],['Indicar compras u otra actividad significativa equivalente','Situar la meta en comunidad/acompañamiento'],['Evitar técnicas y promesas absolutas','Respetar 25–75 palabras']]);
+ }
+ if(id==='d02'){
+  const b=norm(fields.balanceo),a=norm(fields.apoyo),o=norm(fields.operacional),all=[b,a,o].join(' ');
+  const foot=any(b,/\b(pie|punta|tobillo|dorsiflex\w*|arrastre)\b/),swing=any(b,/\b(balanceo|despej\w*|arrastr\w*|tropiez\w*|elev\w*|paso)\b/);
+  const knee=any(a,/\b(rodilla|gen\w*)\b/),stance=any(a,/\b(apoyo|estabil\w*|control\w*|hiperextens\w*|recurvat\w*)\b/);
+  const home=any(all,/\b(hogar|casa|domicili\w*|habitacion\w*|pasillo\w*|interior\w*)\b/),safe=any(all,/\b(segur\w*|caida\w*|tropiez\w*|riesgo\w*|independen\w*)\b/);
+  const measure=any(o,/\b(tug|timed up and go|test|prueba|segundos?|repeticiones?|met(?:ro|ros)|distancia|tropiez\w*|caidas?|episodios?)\b/);
+  // Dos números NO prueban una meta: pueden ser una línea base y un plazo.
+  // Se exige una transición de base a meta (26 a 22 s) o un cambio porcentual explícito.
+  const transition=o.match(/\b(?:de|desde)\s*(\d+(?:[.,]\d+)?)\s*(?:segundos?|s|repeticiones?|metros?|m)?\s*(?:a|hasta)\s*(\d+(?:[.,]\d+)?)/);
+  const change=any(o,/\b(?:reducir|disminuir|incrementar|aumentar|mejorar)\b.{0,65}\b\d+(?:[.,]\d+)?\s*(?:%|por ciento)\b/);
+  const target=Boolean(transition)||change;
+  let plausible=true;
+  const tug=any(o,/\b(tug|timed up and go)\b/);
+  if(tug&&transition){const baseline=Number(transition[1].replace(',','.')),goal=Number(transition[2].replace(',','.'));plausible=goal<baseline&&goal>=8;}
+  const smart=Number(measure)+Number(target&&plausible)+Number(hasTime(o));
+  const extent=Object.entries(LIMITS.d02).every(([k,[lo,hi]])=>countWords(fields[k])>=lo&&countWords(fields[k])<=hi);
+  const scores=[Number(foot)+Number(swing),Number(knee)+Number(stance),Number(home)+Number(safe),smart,Number(extent&&!techniques.test(all)&&!impossible.test(all))];
+  return build(id,scores,[['Indicar el pie/punta/tobillo','Vincular al balanceo/despeje'],['Mencionar rodilla','Mencionar control y apoyo'],['Conectar con el hogar','Conectar con seguridad o prevención de tropiezos'],['Incluir indicador objetivo','Incluir línea base y cambio medible y dirección apropiada','Establecer plazo (semanas/meses/días)'],['Extensión y pertinencia de los 3 apartados']]);
+ }
+ throw Error('Pregunta de desarrollo inexistente');
+}
+function build(id,scores,criterionChecks){const rub=RUBRIC[id],total=scores.reduce((a,b)=>a+b,0);return {scores,total,max:10,level:total>=9?'Alto':total>=6?'Mínimo satisfactorio':'Bajo el mínimo',criteria:rub.map((r,i)=>({title:r.title,score:scores[i],max:r.max,expected:r.detail,checks:criterionChecks[i]})),explanation:'Revisión automatizada orientativa basada en componentes explícitos. El docente puede modificarla tras leer la respuesta. No equivale a una comprensión clínica completa.'}}
+
+const DBKEY='marchrally-html-local-v3', SID='marchrally-current-student', TSESSION='marchrally-teacher-session';
+const $=id=>document.getElementById(id);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const tm=s=>s?new Date(s).toLocaleString('es-CL',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'}):'—';
+const uid=()=>typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random().toString(36).slice(2);
+const isOnlineLink=()=>['https:','http:'].includes(location.protocol);
+const EVIDENCE='Esta versión HTML guarda datos solamente en este navegador. Si la abres desde distintos teléfonos, NO comparte equipos ni puntajes. Para un aula real sincronizada usa la versión con servidor.';
+let volatileStorage=null;let storageWarning=false;let db={room:null,teams:[],students:[],teacherHash:null};let view='student',sid='',teacherOk=false,selected=null,selectedDetail='',lastAlert='',channel;
+try{db={...db,...JSON.parse(localStorage.getItem(DBKEY)||'{}')};}catch{}
+try{sid=sessionStorage.getItem(SID)||'';teacherOk=sessionStorage.getItem(TSESSION)==='ok'}catch{}
+function persist(){try{localStorage.setItem(DBKEY,JSON.stringify(db));channel?.postMessage('change');return true}catch(e){volatileStorage=JSON.stringify(db);if(!storageWarning){storageWarning=true;notice('Almacenamiento bloqueado: esta sesión es temporal y no persistirá al cerrar el navegador.')}return false}}
+function load(){try{const x=localStorage.getItem(DBKEY);if(x)db={...db,...JSON.parse(x)}}catch{if(volatileStorage)db={...db,...JSON.parse(volatileStorage)}}}
+function safeSessionSet(k,v){try{sessionStorage.setItem(k,v)}catch{}}
+function safeSessionRemove(k){try{sessionStorage.removeItem(k)}catch{}}
+function notice(s){$('msg').textContent=s;$('msg').classList.remove('none');setTimeout(()=>$('msg').classList.add('none'),6500)}
+const words=s=>String(s||'').trim().split(/\s+/).filter(Boolean).length;
+const roomCode=()=>Math.random().toString(36).slice(2,8).toUpperCase();
+function verifyRut(raw){let s=String(raw||'').replace(/[^0-9kK]/g,'').toUpperCase();if(!/^\d{7,8}[0-9K]$/.test(s))return null;const body=s.slice(0,-1);let sum=0,m=2;for(let i=body.length-1;i>=0;i--){sum+=Number(body[i])*m;m=m===7?2:m+1}let k=11-sum%11,d=k===11?'0':k===10?'K':String(k);return d===s.slice(-1)?body+'-'+d:null}
+function pinHash(x){let h=2166136261;for(const ch of 'class-pin|'+x){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return(h>>>0).toString(16)}
+function getMe(){return db.students.find(s=>s.id===sid)}
+function phase(){if(!db.room)return 'none';if(db.room.phase==='active'&&Date.now()>=db.room.endsAt){db.room.phase='closed';for(const s of db.students)if(!s.finishedAt)s.finishedAt=new Date(db.room.endsAt).toISOString();persist()}return db.room.phase}
+function remain(){return !db.room||phase()==='lobby'?3600:Math.max(0,Math.ceil((db.room.endsAt-Date.now())/1000))}
+function clockString(){const sec=remain();return String(Math.floor(sec/60)).padStart(2,'0')+':'+String(sec%60).padStart(2,'0')}
+function answerCount(s){return Object.keys(s.answers||{}).length}
+function scores(s){let mc=0,op=0;for(const q of QUESTIONS.mc){if(s.answers?.[q.id]?.choice===q.answer)mc+=3}for(const q of QUESTIONS.open){const a=s.answers?.[q.id];if(a){const ss=s.overrides?.[q.id]?.scores||a.evaluation?.scores||[];op+=ss.reduce((x,y)=>x+y,0)}}let penalties=(s.events||[]).filter(e=>e.kind==='salida'&&!e.waived).length;return {mc,op,penalties,total:Math.max(0,mc+op-penalties)}}
+function teamRanking(){const ts=db.teams.map(t=>{const members=db.students.filter(s=>s.teamId===t.id);const avg=members.length?members.reduce((a,s)=>a+scores(s).total,0)/members.length:0;return {...t,count:members.length,average:avg,progress:members.length?members.reduce((a,s)=>a+answerCount(s),0)/members.length:0}});return ts.sort((a,b)=>b.average-a.average||b.progress-a.progress||a.name.localeCompare(b.name,'es'))}
+function event(kind,reason){const me=getMe();if(!me||phase()!=='active'||me.finishedAt)return;if(kind==='salida'&&me.away)return;if(kind==='entrada'&&!me.away)return;me.away=kind==='salida';me.events.push({id:uid(),kind,reason,at:new Date().toISOString(),waived:false});me.lastSeen=Date.now();persist();if(kind==='salida')lastAlert='Se detectó una salida de la evaluación: −1 punto. El docente puede anular el registro.'}
+function goto(which){if(view==='student'&&which!=='student'){event('salida','Cambio a otra vista de la aplicación')}view=which;for(const k of ['student','wall','teacher']){$('view'+k[0].toUpperCase()+k.slice(1)).classList.toggle('active',k===which);$('nav'+k[0].toUpperCase()+k.slice(1)).classList.toggle('selected',k===which)}if(view==='student'&&getMe()?.away)event('entrada','Regreso a la evaluación');render()}
+function render(){load();phase();if(view==='student')studentRender();if(view==='wall')wallRender();if(view==='teacher')teacherRender();}
+function boardHtml(){const ranks=teamRanking();return ranks.length?ranks.map((t,i)=>`<div class="rank"><div><span class="pill">#${i+1}</span> <b>${esc(t.name)}</b><div class="tagline">${t.count} integrantes · ${t.progress.toFixed(1)}/12 respuestas promedio</div></div><strong>${t.average.toFixed(1)}<span class="muted" style="font-size:12px"> /50</span></strong></div>`).join(''):'<p class="muted">Todavía no hay equipos registrados.</p>'}
+function studentRender(){const me=getMe(),p=phase();if(!me){const canRegister=p==='lobby';$('studentBody').innerHTML=`<div class="hero"><div><div class="eyebrow">DESAFÍO INTERACTIVO EN EQUIPOS</div><h1>La marcha revela el problema. <span style="color:var(--a)">Tú defines el objetivo.</span></h1><p class="lede">Diez situaciones clínicas de marcha parkinsoniana, atáxica sensitiva, cerebelosa, hemipléjica y atetósica, más dos casos de construcción de objetivos.</p><div class="kpis"><div><strong>12</strong><small>desafíos clínicos</small></div><div><strong>50</strong><small>puntos máximos</small></div><div><strong>60 min</strong><small>tiempo total</small></div></div><div class="notice warn">${EVIDENCE}</div></div><div class="panel"><div class="eyebrow">INGRESO A LA EVALUACIÓN</div><h2>Registra tu participación</h2><p>Estado: <b>${p==='none'?'Sala no creada':p==='lobby'?'Inscripción abierta':p==='active'?'Evaluación en curso':'Evaluación cerrada'}</b></p><form id="regForm"><label>Nombre completo<input name="name" autocomplete="name" required maxlength="85" placeholder="Nombre y apellidos"></label><label>RUT<input name="rut" inputmode="text" maxlength="13" required placeholder="12.345.678-5"></label><label>Equipo</label><div class="row"><label style="margin:0;font-weight:500"><input type="radio" name="choiceTeam" value="join" checked style="width:auto"> Integrarme</label><label style="margin:0;font-weight:500"><input type="radio" name="choiceTeam" value="create" style="width:auto"> Crear equipo</label></div><div id="selectTeamWrap"><select name="team"><option value="">Seleccionar equipo</option>${db.teams.map(t=>`<option value="${esc(t.id)}">${esc(t.name)}</option>`).join('')}</select></div><div class="none" id="teamCreateWrap"><input name="newTeam" placeholder="Nombre de mi equipo" maxlength="40"></div><button class="btn big" ${canRegister?'':'disabled'}>Ingresar al aula</button></form>${p==='none'?'<button class="btn secondary big" onclick="startSoloDemo()">Iniciar demostración individual (sin sala compartida)</button>':''}<p class="hint" style="margin-top:14px">Los estudiantes pueden inscribirse antes de que el docente inicie el reloj. En una demostración individual, el reloj empieza al registrarse.</p></div></div>`;const form=$('regForm');form.querySelectorAll('input[name=choiceTeam]').forEach(x=>x.addEventListener('change',()=>{$('selectTeamWrap').classList.toggle('none',x.value!=='join');$('teamCreateWrap').classList.toggle('none',x.value!=='create')}));form.onsubmit=e=>{e.preventDefault();load();if(phase()!=='lobby')return notice('La inscripción está cerrada.');const name=form.elements.name.value.trim(),rut=verifyRut(form.elements.rut.value);if(name.length<6)return notice('Ingresa nombre y apellidos.');if(!rut)return notice('El RUT es incorrecto. Revisa su dígito verificador.');if(db.students.some(s=>s.rut===rut))return notice('Este RUT ya se encuentra registrado en esta sala.');const kind=form.querySelector('input[name=choiceTeam]:checked').value;let teamId;if(kind==='create'){const n=form.elements.newTeam.value.trim();if(n.length<3)return notice('Nombre del equipo: mínimo 3 caracteres.');if(db.teams.some(t=>t.name.toLowerCase()===n.toLowerCase()))return notice('Ya existe un equipo con ese nombre.');teamId=uid();db.teams.push({id:teamId,name:n})}else{teamId=form.elements.team.value;if(!db.teams.some(t=>t.id===teamId))return notice('Selecciona un equipo válido.');if(db.students.filter(s=>s.teamId===teamId).length>=8)return notice('Equipo completo (máximo 8).')}const s={id:uid(),name,rut,teamId,joinedAt:new Date().toISOString(),answers:{},drafts:{},overrides:{},events:[{id:uid(),kind:'entrada',reason:'Registro inicial',at:new Date().toISOString(),waived:false}],lastSeen:Date.now(),away:false,finishedAt:null};db.students.push(s);sid=s.id;safeSessionSet(SID,s.id);if(db.room.autoStart){db.room.phase='active';db.room.startsAt=Date.now();db.room.endsAt=db.room.startsAt+3600000}persist();render()};return;}
+const team=db.teams.find(t=>t.id===me.teamId);if(p==='lobby'){$('studentBody').innerHTML=`<div class="panel" style="max-width:720px;margin:auto"><div class="eyebrow">INSCRIPCIÓN COMPLETADA</div><h1 style="font-size:2.3rem">¡Bienvenido al equipo ${esc(team?.name||'')}!</h1><p>${esc(me.name)} · RUT ${esc(me.rut)}</p><div class="notice">Tu registro quedó guardado en este navegador. El docente iniciará un único período de 60 minutos para todos los equipos.</div><button class="btn secondary" onclick="render()" style="margin-top:20px">Actualizar estado</button></div>`;return}
+if(p==='closed'||me.finishedAt){const sc=scores(me);$('studentBody').innerHTML=`<div class="panel center" style="max-width:740px;margin:24px auto;padding:40px"><div class="eyebrow">EVALUACIÓN FINALIZADA</div><h1>Resultados de ${esc(me.name)}</h1><p>Equipo: <b>${esc(team?.name||'')}</b> · Respondidas: ${answerCount(me)}/12</p><div class="scorelines"><div><small>Alternativas</small><strong>${sc.mc}/30</strong></div><div><small>Desarrollo</small><strong>${sc.op}/20</strong></div><div><small>Descuentos</small><strong>−${sc.penalties}</strong></div></div><p style="margin-top:20px;font-size:27px"><b>Total: ${sc.total}/50</b></p><p class="hint">La autoevaluación de desarrollos es orientativa; el docente puede modificar cada criterio.</p><button class="btn secondary" onclick="goto('wall')">Ver marcador por equipos</button></div>`;return}
+const q=QUESTIONS.mc.concat(QUESTIONS.open).find(q=>!me.answers[q.id]);if(!q){me.finishedAt=new Date().toISOString();persist();studentRender();return}const i=QUESTIONS.mc.concat(QUESTIONS.open).findIndex(x=>x.id===q.id),mc=!!q.options;const sc=scores(me);
+$('studentBody').innerHTML=`<div class="topline"><div><div class="eyebrow">${esc(me.name)} · EQUIPO ${esc(team?.name||'')}</div><h2>Desafío ${i+1} de 12</h2></div><div><div class="meta">TIEMPO GLOBAL RESTANTE</div><div class="timer" id="clockStudent">${clockString()}</div></div></div><div class="stats"><div><small>Avance</small><strong>${answerCount(me)}/12</strong></div><div><small>Acumulado</small><strong>${sc.total}/50</strong></div><div><small>Salidas detectadas</small><strong>${sc.penalties}</strong></div><div><small>Equipo</small><strong style="font-size:18px">${esc(team?.name||'')}</strong></div></div><div class="progress"><div style="width:${answerCount(me)*100/12}%"></div></div><div style="text-align:right;margin-bottom:12px"><button class="btn secondary" onclick="toggleFullscreen()">⛶ Pantalla completa</button></div>${lastAlert?`<div class="alert">${esc(lastAlert)}</div>`:''}<article class="panel"><div class="questionbar"><span>${mc?'SELECCIÓN CLÍNICA · 3 PUNTOS':'CONSTRUCCIÓN DE OBJETIVOS · 10 PUNTOS'}</span><h2>${esc(q.tag)}</h2></div><div class="casegrid"><div><div class="eyebrow">ANTECEDENTES DEL PACIENTE</div><div class="vignette">${esc(q.case)}</div></div><div><div class="eyebrow">DESAFÍO TERAPÉUTICO</div><h2>${esc(q.task)}</h2><form id="answerForm"><div id="answerContent"></div><div class="foot"><span class="hint">La respuesta quedará bloqueada al entregarla.</span><button class="btn">${i===11?'Finalizar y entregar':'Confirmar y continuar'}</button></div></form></div></div></article>`;
+const area=$('answerContent');if(mc){area.innerHTML=q.options.map(o=>`<label class="option"><input type="radio" name="pick" value="${o.id}"><span>${esc(o.text)}</span></label>`).join('')}else{const sections=q.id==='d01'?[['objetivo','Objetivo general',25,75]]:[['balanceo','Objetivo específico: balanceo',12,45],['apoyo','Objetivo específico: apoyo',12,45],['operacional','Objetivo operacional (SMART)',18,65]];area.innerHTML=`<div class="notice">${q.id==='d01'?'Contenido mínimo: capacidad de desplazamiento, bloqueo/inicio, giros, seguridad y participación en las compras.':'Contenido mínimo: despeje del pie durante balanceo; control de rodilla en apoyo; seguridad dentro del hogar; indicador, cambio medible y plazo.'}<br><b>Extensión mínima y máxima por apartado:</b> ${sections.map(x=>`${x[1]}: ${x[2]}–${x[3]} palabras`).join(' · ')}</div>${sections.map(([key,label,lo,hi])=>`<label>${label}<textarea data-field="${key}" placeholder="Formula aquí un resultado terapéutico, no una técnica..." maxlength="1500">${esc(me.drafts?.[q.id]?.[key]||'')}</textarea></label><small class="wcount" data-counter="${key}">0 palabras · mínimo ${lo} / máximo ${hi}</small>`).join('')}<h3 style="margin-top:21px">Rúbrica de autoevaluación</h3><div class="rubric">${RUBRIC[q.id].map(r=>`<div class="item"><span>${esc(r.title)}<div class="hint">${esc(r.detail)}</div></span><b>0–${r.max}</b></div>`).join('')}</div><p class="hint" style="margin-top:8px">Corrección automática orientativa por componentes; el docente podrá revisarla.</p>`;const updateDraft=()=>{const fields={};for(const ta of area.querySelectorAll('[data-field]')){fields[ta.dataset.field]=ta.value;const l=LIMITS[q.id][ta.dataset.field];area.querySelector(`[data-counter="${ta.dataset.field}"]`).textContent=`${words(ta.value)} palabras · mínimo ${l[0]} / máximo ${l[1]}`}me.drafts[q.id]=fields;persist()};for(const ta of area.querySelectorAll('[data-field]'))ta.addEventListener('input',updateDraft);for(const ta of area.querySelectorAll('[data-field]')){const l=LIMITS[q.id][ta.dataset.field];area.querySelector(`[data-counter="${ta.dataset.field}"]`).textContent=`${words(ta.value)} palabras · mínimo ${l[0]} / máximo ${l[1]}`}}
+$('answerForm').onsubmit=e=>{e.preventDefault();load();if(phase()!=='active')return notice('El tiempo global terminó.');const s=getMe();if(!s||s.answers[q.id])return;let answer;if(mc){const choice=$('answerForm').querySelector('input[name=pick]:checked')?.value;if(!choice)return notice('Selecciona una alternativa.');answer={choice}}else{const fields={};for(const a of $('answerForm').querySelectorAll('[data-field]'))fields[a.dataset.field]=a.value.trim();const valid=checkLimits(q.id,fields);if(!valid.valid)return notice(valid.error);answer={fields,evaluation:autoEvaluate(q.id,fields)}}if(!confirm('¿Confirmar respuesta? No podrás modificarla después.'))return;s.answers[q.id]={...answer,at:new Date().toISOString()};s.lastSeen=Date.now();if(answerCount(s)===12)s.finishedAt=new Date().toISOString();persist();if(!mc){const total=answer.evaluation.total;alert(`Autoevaluación orientativa: ${total}/10.\n`+answer.evaluation.criteria.map(c=>`${c.title}: ${c.score}/${c.max}`).join('\n'))}render()};}
+function wallRender(){const p=phase(),hosted=isOnlineLink();$('wallBody').innerHTML=`<div class="eyebrow">PANTALLA PARA PROYECTAR EN EL AULA</div><h1>Conéctate a MarchaRally</h1><div class="split"><div class="panel center"><h2>Acceso mediante QR</h2><div id="qrBox" class="qrcode"></div><div id="urlPrint" class="linkline"></div><div class="row" style="justify-content:center;margin-top:15px"><button class="btn secondary" onclick="copyLink()">Copiar enlace</button><button class="btn secondary" onclick="print()">Imprimir QR</button></div><p class="hint" style="margin-top:17px">${hosted?'El QR abre la URL publicada de este archivo.':'Para que el QR abra la aplicación en otros teléfonos, publica el HTML mediante HTTPS y vuelve a abrirlo desde esa dirección.'}</p></div><div class="panel"><div class="eyebrow">ESTADO DEL AULA</div><h2>${p==='none'?'Sala no creada':p==='lobby'?'Inscripción abierta':p==='active'?'Evaluación en curso':'Evaluación finalizada'}</h2><div class="timer" id="clockWall">${clockString()}</div><p>Código de sala: <b>${esc(db.room?.code||'—')}</b></p><h2>Marcador de equipos</h2>${boardHtml()}<p class="hint" style="margin-top:18px">${EVIDENCE}</p></div></div>`;const box=$('qrBox');if(hosted){try{const url=location.origin+location.pathname;const qr=new QRCode(0,QRModules.QRErrorCorrectLevel.M);qr.addData(url);qr.make();const m=qr.getModuleCount(),rects=[];for(let r=0;r<m;r++)for(let c=0;c<m;c++)if(qr.isDark(r,c))rects.push(`<rect x="${c}" y="${r}" width="1" height="1"/>`);box.innerHTML=`<svg role="img" aria-label="Código QR para abrir MarchaRally" viewBox="-3 -3 ${m+6} ${m+6}" xmlns="http://www.w3.org/2000/svg"><rect x="-3" y="-3" width="${m+6}" height="${m+6}" fill="white"/><g fill="#102f38">${rects.join('')}</g></svg>`;$('urlPrint').textContent=url}catch(e){box.textContent='No se pudo generar el QR: '+e.message}}else{box.innerHTML='<div class="center" style="padding:65px 10px"><strong>QR pendiente</strong><p class="hint">Abre primero el archivo desde una dirección HTTPS pública.</p></div>';$('urlPrint').textContent='Archivo local: sin enlace público que otros teléfonos puedan abrir.'}}
+function copyLink(){if(!isOnlineLink())return notice('El HTML aún no tiene un enlace público.');navigator.clipboard?.writeText(location.origin+location.pathname).then(()=>notice('Enlace copiado.')).catch(()=>notice('Copia el enlace que aparece debajo del QR.'))}
+function teacherRender(){if(!teacherOk){const exists=!!db.teacherHash;$('teacherBody').innerHTML=`<div class="panel" style="max-width:460px;margin:35px auto"><div class="eyebrow">PANEL DOCENTE LOCAL</div><h1 style="font-size:2.4rem">Acceso docente</h1><p>${exists?'Ingresa el PIN docente de este navegador.':'Crea un PIN docente de al menos 6 caracteres.'}</p><form id="teacherLogin"><label>PIN docente<input name="pin" type="password" required minlength="6" autocomplete="off"></label>${exists?'':'<label>Confirmar PIN<input name="confirm" type="password" required minlength="6" autocomplete="off"></label>'}<button class="btn big">${exists?'Ingresar':'Configurar PIN e ingresar'}</button></form><p class="hint" style="margin-top:15px">En un archivo HTML local este PIN no constituye autenticación segura.</p></div>`;$('teacherLogin').onsubmit=e=>{e.preventDefault();const f=e.target,pin=f.elements.pin.value;if(!db.teacherHash){if(pin!==f.elements.confirm.value||pin.length<6)return notice('PIN no coincide o demasiado corto.');db.teacherHash=pinHash(pin);persist()}else if(db.teacherHash!==pinHash(pin))return notice('PIN incorrecto');teacherOk=true;safeSessionSet(TSESSION,'ok');teacherRender()};return}
+const p=phase(),students=db.students;
+$('teacherBody').innerHTML=`<div class="topline"><div><div class="eyebrow">GESTIÓN DE AULA · MODO HTML</div><h1>Panel docente</h1><p class="meta">Sala ${esc(db.room?.code||'sin crear')} · ${p==='lobby'?'Inscripción':p==='active'?'En curso':p==='closed'?'Cerrada':'Sin iniciar'}</p></div><div><div class="meta">TIEMPO GLOBAL</div><div class="timer" id="clockTeacher">${clockString()}</div></div></div><div class="panel"><div class="row"><button class="btn secondary" onclick="createRoom()">Nueva sala</button><button class="btn" ${p==='lobby'&&students.length?'':'disabled'} onclick="startRoom()">Iniciar 60 minutos</button><button class="btn warning" ${p==='active'?'':'disabled'} onclick="closeRoom()">Finalizar prueba</button><button class="btn secondary" onclick="goto('wall')">Proyectar QR</button><button class="btn secondary" onclick="exportCSV()">Exportar CSV</button><button class="btn secondary" onclick="teacherOk=false;safeSessionRemove(TSESSION);teacherRender()">Salir</button></div></div><div class="notice warn" style="margin-bottom:20px">${EVIDENCE} El PIN del modo local no es una barrera de seguridad frente a herramientas de desarrollador.</div><div class="stats"><div><small>Inscritos</small><strong>${students.length}</strong></div><div><small>Equipos</small><strong>${db.teams.length}</strong></div><div><small>Respuestas</small><strong>${students.reduce((a,s)=>a+answerCount(s),0)}</strong></div><div><small>Salidas no anuladas</small><strong>${students.reduce((a,s)=>a+scores(s).penalties,0)}</strong></div></div><div class="split"><div class="panel"><div class="topline"><h2>Resultados por estudiante</h2><input id="teacherSearch" placeholder="Buscar estudiante o equipo" style="max-width:240px" oninput="teacherRows()"></div><div class="scroll"><table><thead><tr><th>Estudiante / RUT</th><th>Equipo</th><th>Progreso</th><th>Puntos</th><th>Salidas</th><th>Detalle</th></tr></thead><tbody id="teacherRows"></tbody></table></div></div><div class="panel"><h2>Tabla de equipos</h2>${boardHtml()}<p class="hint" style="margin-top:20px">Clasificación por promedio individual, no por suma de integrantes.</p></div></div><div id="teacherDetail"></div>`;teacherRows();if(selectedDetail)detailRender()}
+function teacherRows(){const el=$('teacherRows');if(!el)return;const v=($('teacherSearch')?.value||'').toLowerCase();el.innerHTML=db.students.filter(s=>(s.name+' '+s.rut+' '+(db.teams.find(t=>t.id===s.teamId)?.name||'')).toLowerCase().includes(v)).map(s=>`<tr><td><b>${esc(s.name)}</b><br><small>${esc(s.rut)}</small></td><td>${esc(db.teams.find(t=>t.id===s.teamId)?.name||'')}</td><td>${answerCount(s)}/12</td><td><b>${scores(s).total}/50</b></td><td>${scores(s).penalties}</td><td><button class="linkbtn" onclick="selectedDetail='${esc(s.id)}';detailRender()">Revisar</button></td></tr>`).join('')||'<tr><td colspan="6">Sin estudiantes registrados.</td></tr>'}
+function detailRender(){const s=db.students.find(x=>x.id===selectedDetail),el=$('teacherDetail');if(!el||!s)return;let h=`<div class="panel"><div class="topline"><div><div class="eyebrow">FICHA DE ESTUDIANTE</div><h2>${esc(s.name)}</h2><p>RUT ${esc(s.rut)} · ${esc(db.teams.find(t=>t.id===s.teamId)?.name||'')} · ${answerCount(s)}/12 respuestas · <b>${scores(s).total}/50 pts</b></p></div><button class="btn secondary" onclick="selectedDetail='';teacherRender()">Cerrar</button></div><h3>Alternativas</h3>`;for(const q of QUESTIONS.mc){const a=s.answers?.[q.id];h+=`<div class="badgebox"><b>${esc(q.tag)}</b><p>${a?'Respuesta '+esc(a.choice.toUpperCase())+(a.choice===q.answer?' · Correcta (+3)':' · Incorrecta (+0)'):'Sin responder'} · Clave: ${esc(q.answer.toUpperCase())}</p><p class="hint">${esc(q.rationale)}</p></div>`}h+='<h3>Desarrollos y rúbricas</h3>';for(const q of QUESTIONS.open){const a=s.answers?.[q.id];h+=`<div class="badgebox"><b>${esc(q.tag)}</b>${a?Object.entries(a.fields).map(([k,t])=>`<div class="meta">${esc(k.toUpperCase())}</div><div class="longtext">${esc(t)}</div>`).join(''):'<p>Sin entregar.</p>'}`;if(a){const evalx=a.evaluation,vals=s.overrides?.[q.id]?.scores||evalx.scores;h+=`<p class="meta">Autoevaluación: ${evalx.total}/10 · Calificación vigente: ${vals.reduce((x,y)=>x+y,0)}/10</p><form data-grade="${q.id}">`;RUBRIC[q.id].forEach((r,i)=>h+=`<div class="criterium"><span>${esc(r.title)}<br><small>${esc(r.detail)}</small></span><select data-i="${i}">${Array.from({length:r.max+1},(_,j)=>`<option ${vals[i]===j?'selected':''} value="${j}">${j} / ${r.max}</option>`).join('')}</select></div>`);h+='<button class="btn secondary" style="margin:12px 0" type="submit">Guardar revisión docente</button></form>'}h+='</div>'}h+='<h3>Entradas y salidas</h3>';for(const e of (s.events||[]).slice().reverse()){h+=`<div class="event"><b>${e.kind==='salida'?'Salida':'Entrada'}</b><span>${tm(e.at)} · ${esc(e.reason)} ${e.kind==='salida'?`<label style="display:inline;margin-left:12px"><input type="checkbox" style="width:auto" data-waive="${e.id}" ${e.waived?'checked':''}> Anular −1</label>`:''}</span></div>`}h+='</div>';el.innerHTML=h;el.querySelectorAll('[data-grade]').forEach(f=>f.onsubmit=e=>{e.preventDefault();const qid=f.dataset.grade;s.overrides[qid]={scores:[...f.querySelectorAll('[data-i]')].map(x=>Number(x.value)),at:new Date().toISOString()};persist();teacherRender();selectedDetail=s.id;detailRender();notice('Rúbrica revisada.')});el.querySelectorAll('[data-waive]').forEach(x=>x.onchange=()=>{const e=s.events.find(v=>v.id===x.dataset.waive);if(!e)return;e.waived=x.checked;persist();teacherRender();selectedDetail=s.id;detailRender()})}
+function startSoloDemo(){if(db.room)return notice('Ya existe una sala en este dispositivo.');db.room={name:'Demostración individual',code:'DEMO',phase:'lobby',autoStart:true,startsAt:null,endsAt:null};db.teams=[];db.students=[];persist();render()}
+function toggleFullscreen(){if(document.fullscreenElement){document.exitFullscreen?.().catch(()=>{})}else{document.documentElement.requestFullscreen?.().catch(()=>notice('La pantalla completa no está disponible en este navegador.'))}}
+function createRoom(){if(db.students.length){const ok=prompt('Esta acción BORRARÁ la sala actual. Exporta antes los resultados. Escribe BORRAR para confirmar.');if(ok!=='BORRAR')return}let name=prompt('Nombre de la sala','MarchaRally · Marchas neurológicas');if(name===null)return;db.room={name:name.trim()||'MarchaRally · Marchas neurológicas',code:roomCode(),phase:'lobby',startsAt:null,endsAt:null};db.teams=[];db.students=[];sid='';safeSessionRemove(SID);selectedDetail='';persist();teacherRender();notice('Sala creada. Registra equipos en la pestaña Estudiantes.')}
+function startRoom(){if(phase()!=='lobby'||!db.students.length)return;if(!confirm('Iniciar el plazo único de 60 minutos para toda la sala. ¿Continuar?'))return;db.room.phase='active';db.room.startsAt=Date.now();db.room.endsAt=db.room.startsAt+3600000;persist();teacherRender()}
+function closeRoom(){if(!confirm('Cerrar definitivamente esta evaluación para todos los equipos?'))return;db.room.phase='closed';db.room.endsAt=Date.now();db.students.forEach(s=>s.finishedAt||=new Date().toISOString());persist();teacherRender()}
+function exportCSV(){const rows=[['Nombre','RUT','Equipo','Inicio','Respuestas','MC/30','Desarrollo/20','Penalizaciones','Total/50','Eventos','Respuestas desarrollo']];for(const s of db.students){const sc=scores(s);rows.push([s.name,s.rut,db.teams.find(t=>t.id===s.teamId)?.name||'',s.joinedAt,answerCount(s),sc.mc,sc.op,sc.penalties,sc.total,s.events.map(e=>`${e.at} ${e.kind} ${e.reason}${e.waived?' [anulada]':''}`).join(' | '),QUESTIONS.open.map(q=>JSON.stringify(s.answers[q.id]?.fields||{})).join(' | ')])}const cell=v=>{let s=String(v??'');if(/^[=+\-@\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'};const csv='\ufeff'+rows.map(r=>r.map(cell).join(';')).join('\r\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download='MarchaRally_Resultados_Equipos.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),2500)}
+document.addEventListener('visibilitychange',()=>{if(view==='student'){if(document.hidden)event('salida','Pestaña oculta / cambio de aplicación');else event('entrada','Regreso a la pestaña')}});
+window.addEventListener('pagehide',()=>{if(view==='student')event('salida','Navegación o cierre del navegador')});
+let wasFull=false;document.addEventListener('fullscreenchange',()=>{if(view==='student'&&wasFull&&!document.fullscreenElement)event('salida','Salida de pantalla completa');wasFull=!!document.fullscreenElement});
+window.addEventListener('storage',e=>{if(e.key===DBKEY)render()});try{channel=new BroadcastChannel('marchrally-html-local-v3');channel.onmessage=()=>{if(view!=='student'||!getMe()?.drafts)render()}}catch{}
+setInterval(()=>{if(view==='student'){const el=$('clockStudent');if(el)el.textContent=clockString();if(phase()==='closed'&&getMe())render()}if(view==='wall'){const el=$('clockWall');if(el)el.textContent=clockString()}if(view==='teacher'){const el=$('clockTeacher');if(el)el.textContent=clockString()}},1000);
+setInterval(()=>{if(view==='wall')render();else if(view==='teacher'&&!document.activeElement?.closest('[data-grade]'))render()},7500);
+// Support deep links when hosted: #docente, #qr, or student view.
+if(location.hash==='#docente')goto('teacher');else if(location.hash==='#qr')goto('wall');else render();
+</script></body></html>
